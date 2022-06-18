@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Logo1 />
+  <Menu1 />
+  <Terminal />
+  <Footer1 :Memoji="Memoji1"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Menu1 from './components/Me-nu.vue'
+  import Logo1 from './components/Lo-go.vue'
+  import Terminal from './components/Ter-minal.vue'
+  import Footer1 from './components/Foo-ter.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'App',
+    components: { 
+      Menu1, Logo1, Terminal, Footer1
+    },
+    
+    data() {
+      return {
+        Memoji1: [
+          {
+            url: "./assests/bitme/404err.png"
+          }
+        ]
+    };
+
+    },
   }
-}
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  align-items: flex-start;
+  display: flex;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
