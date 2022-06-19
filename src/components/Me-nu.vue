@@ -27,18 +27,21 @@
         border-radius: 10px;
         width: 238px;
         height: 59px;
-        left: 640px;
+        left: 690px;
         top: 69px;
+        border: 2px solid darkgreen;
     }
     .resume{
         position: relative;
         left: 78px;
+        color: gold;
 
     }
 
     .home{
         position: absolute;
         left: 10px;
+        color: gold;
 
     }
 </style>

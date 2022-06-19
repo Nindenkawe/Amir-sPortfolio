@@ -12,31 +12,16 @@
         right: 12px;
         font-size: 22px;
         padding: auto;
+        border: 2px solid darkgreen;
+        border-radius: 10px;
     }
-    /*.arabic-name{
-        position: relative;
-        width: 24px;
-        height: 56px;
-        font-family: 'Almarai';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 56px;
-        color: #034A20;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+    .arabic-name{
+        position: flex;
+        color: gold;
+
     }
     .nindenkawe-1{
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 10px;
-        position: relative;
-        width: 70px;
-        height: 56px;
-        left: 4px;
-        top: 40px;
-    }*/
+        color: gold;
+    }
 </style>

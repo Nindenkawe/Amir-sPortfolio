@@ -1,7 +1,7 @@
 <template>
     <div class="bottomfooter">
         {{Memoji1}}
-        <div class="copyright">nindenkawe.rw @2022</div>
+        <div class="copyright"><p>nindenkawe.rw @2022</p></div>
     </div>
 </template>
 
@@ -14,16 +14,19 @@
 <style scoped>
     .bottomfooter{
         position: absolute;
-        width: 1510px;
-        height: 96px;
-        left: 0px;
-        top: 678px;
-    }
-    .copyright{
-        position: relative;
         width: 453px;
         height: 56px;
-        left: 520px;
-        top: 40px;
+        left: 0px;
+        top: 668px;
+    }
+    .copyright{
+        position: inherit;
+        width: 453px;
+        height: 56px;
+        left: 570px;
+        top: 70px;
+        color: gold;
+        border-radius: 10px;
+        border: 2px solid darkgreen;
     }
 </style>
