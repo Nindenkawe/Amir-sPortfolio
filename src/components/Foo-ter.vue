@@ -1,7 +1,7 @@
 <template>
     <div class="bottomfooter">
         {{Memoji1}}
-        <div class="copyright"><p>nindenkawe.rw @2022</p></div>
+        <div class="copyright"><p><b>©️ 2022</b> nindenkawe.rw </p></div>
     </div>
 </template>
 

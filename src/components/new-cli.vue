@@ -15,7 +15,7 @@
         <h2 v-if="banner.header" style="letter-spacing: 4px">{{banner.header}}</h2>
         <p v-if="banner.subHeader">{{banner.subHeader}}</p>
         <p v-if="banner.helpHeader">{{banner.helpHeader}}</p>
-        <p></p>
+        <!-- <p>{{Portfoliodata}}</p> -->
       </div>
       <output ref="output"></output>
       <div id="input-line" class="input-line">
@@ -54,16 +54,16 @@ export default {
         return {
           header: "Hi am Nindenkawe اَمير",
           subHeader: "Welcome to my portfolio web-app🔥",
-          helpHeader: 'Enter "help" for more commands & scrips.',
+          helpHeader: 'Enter "help" for a command list.',
           emoji: {
             first: "🌙",
             second: "🔆",
             time: 750
           },
-          sign: "nindenkawe $",
+          sign: "nindenkawe@Portfolio $",
           img: {
             align: "left",
-            link: `@./assets/bitme/banner.png`,
+            link: `./assets/bitme/banner.png`,
             width: 100,
             height: 100
           }
@@ -74,13 +74,10 @@ export default {
         { name: "info",
           desc: "Show information about this terminal",
           get() {
-            return `<p>Hi am nindenkawe اَمير. welcome to my portfolio website. 
-I’m a back-end Web developer, Debugger, & a Technology enthusias, fluent in languages like Python, 
-JavaScript, with a broad understanding of Django, django_rest frameworks, and VueJs. Other skills I acquired during my time in the telecom industry especially 
-in MTN data solutions department as a data and UX support consultant include ADB, GSM and its network spectrum, Mobile and web-apps literacy. I’m hardworking, a quick learner, highly organized and a great team player. 
-For more about me check my socials.</p>`;
+            return `<p>Hi am nindenkawe اَمير. welcome to my portfolio website.</p>`;
         }
         },
+        
         {
           name: "uname",
           desc: "Show the current terminal name",
@@ -92,19 +89,20 @@ For more about me check my socials.</p>`;
   },
   data() {
     return {
+      Portfoliodata:[],
       showemoji: true,
       value: "",
       history_: [],
       histpos_: 0,
-      histtemp_: 0
+      histtemp_: 0,
     };
   },
   computed: {
     allcommands() {
       var tab = [
-        { name: "help", desc: "Show all the commands that are available" },
-        { name: "clear", desc: "Clear the terminal of all output" },
-        { name: "uname", desc: "divice info"}
+        { name: "help", desc: "Show all the commands" },
+        { name: "clear", desc: "Clear all output" },
+        { name: "AboutMe", desc: "Small bio"}
       ];
       if (this.commands) {
         this.commands.forEach(({ name, desc }) => {
@@ -177,6 +175,7 @@ For more about me check my socials.</p>`;
         var cmd = args[0].toLowerCase();
         args = args.splice(1); // Remove cmd from arg list.
       }
+
       if (cmd == "clear") {
         this.$refs.output.innerHTML = "";
         this.value = "";
@@ -264,14 +263,12 @@ img {
   display: -moz-box;
   -moz-box-orient: horizontal;
   -moz-box-align: stretch;
-  display: box;
+  display: -webkit-box;
   box-orient: horizontal;
   box-align: stretch;
   clear: both;
 }
-p{
-  border-radius: 10px;
-}
+
 .input-line > div:nth-child(2) {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;

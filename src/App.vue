@@ -16,17 +16,22 @@
     components: { 
       Menu1, Logo1, Footer1, newcli
     },
-    
     data() {
-      return {
-        Memoji1: [
-          {
-            url: "./assests/bitme/404err.png"
-          }
-        ]
+    return {
+      Portfoliodata:[],
+      Memoji1: null,
+      prompt: null,
+      commands: null,
+      send_to_terminal: null
+      
     };
-
-    },
+  },
+    mounted() {
+      fetch("http://localhost:3000/portfolio")
+        .then(res => res.json())
+        .then(data => this.Portfoliodata=data)
+        .catch(err => console.log(err.message))
+    }
   }
 </script>
 
