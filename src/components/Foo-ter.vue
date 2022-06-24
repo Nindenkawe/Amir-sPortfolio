@@ -23,7 +23,7 @@
         position: inherit;
         width: 453px;
         height: 56px;
-        left: 570px;
+        left: 639px;
         top: 70px;
         color: gold;
         border-radius: 10px;

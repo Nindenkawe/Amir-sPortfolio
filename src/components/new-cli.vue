@@ -102,7 +102,7 @@ export default {
       var tab = [
         { name: "help", desc: "Show all the commands" },
         { name: "clear", desc: "Clear all output" },
-        { name: "AboutMe", desc: "Small bio"}
+        { name: "AboutMe", desc: "Small bio, also feel free to navigate my Resume and socials"}
       ];
       if (this.commands) {
         this.commands.forEach(({ name, desc }) => {
@@ -229,11 +229,11 @@ export default {
 
 <style lang="css" scoped>
   .new-cli{
-      position: relative;
+      position: fixed;
       width: 1086px;
       height: 497px;
-      left: 238px;
-      top: 168px;
+      left: 328px;
+      top: 198px;
       border-radius: 10px;
       border: 2px solid darkgreen;
       color: gold;
