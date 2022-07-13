@@ -1,7 +1,9 @@
 <template>
     <div class="top-rightlogo">
-        <div class="arabic-name"><p>اَمير</p></div>
-        <div class="nindenkawe-1"><p>Nindenkawe</p></div>
+        <a href="tel:+250788314048">
+            <div class="arabic-name"><p>اَمير</p></div>
+            <div class="nindenkawe-1"><p>Nindenkawe</p></div>
+        </a>
     </div>
 </template>
 

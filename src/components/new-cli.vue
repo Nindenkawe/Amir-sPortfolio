@@ -3,7 +3,6 @@
   <div @click="$refs.cmd.focus();">
     <div ref="terminal" id="container">
       <div v-if="banner" id="banner">
-        <p>
           <img
             v-if="banner.img"
             :align="banner.img.align ? banner.img.align : 'left'"
@@ -11,7 +10,6 @@
             :width="banner.img.width ? banner.img.width : '100px'"
             :height="banner.img.height ? banner.img.height : '100px'"
           />
-        </p>
         <h2 v-if="banner.header" style="letter-spacing: 4px">{{banner.header}}</h2>
         <p v-if="banner.subHeader">{{banner.subHeader}}</p>
         <p v-if="banner.helpHeader">{{banner.helpHeader}}</p>
@@ -229,11 +227,11 @@ export default {
 
 <style lang="css" scoped>
   .new-cli{
-      position: fixed;
-      width: 1086px;
+      position: absolute;
+      width: 1020px;
       height: 497px;
       left: 328px;
-      top: 198px;
+      top: 168px;
       border-radius: 10px;
       border: 2px solid darkgreen;
       color: gold;
@@ -252,9 +250,7 @@ export default {
   margin-bottom: 2em;
 }
 img {
-  margin-right: 10px;
-  border: 2px solid darkgreen;
-  border-radius: 10px;
+  border: 5px solid darkgreen;
 }
 .input-line {
   display: -webkit-box;

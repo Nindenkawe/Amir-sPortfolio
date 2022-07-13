@@ -22,6 +22,7 @@
 <style scoped>
     .menu{
         position: absolute;
+        text-align: center;
         background-color: #333; 
         overflow: hidden;
         border-radius: 10px;
@@ -33,7 +34,7 @@
     }
     .resume{
         position: relative;
-        left: 78px;
+        left: 70px;
         color: gold;
 
     }

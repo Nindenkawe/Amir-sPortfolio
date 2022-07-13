@@ -69,10 +69,10 @@
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
 .housing {
   margin: 20px auto;
-  position: fixed;
+  position: absolute;
   width: 250px;
   height: 525px;
-  top: 220px;
+  top: 210px;
   left: 5px;
   border-radius: 2px;
   border: 8px solid #151515;
