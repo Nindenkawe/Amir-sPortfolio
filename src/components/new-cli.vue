@@ -244,7 +244,7 @@ export default {
 #container output {
   clear: both;
   width: 100%;
-  color: #ffff;
+  color: inherit;
 }
 #banner {
   margin-bottom: 2em;
@@ -293,5 +293,6 @@ img {
 .ls-files {
   height: 45px;
   column-width: 100px;
+  color:inherit
 }
 </style>

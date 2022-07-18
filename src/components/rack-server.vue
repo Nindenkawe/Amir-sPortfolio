@@ -52,7 +52,7 @@
       <div class='light'></div>
     </li>
     <li class='large'>
-      <a href='#'>B4Vitisho Galerry</a>
+      <a href='#'>Vitisho Digital Magazine</a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
@@ -64,8 +64,6 @@
   </ul>
 </div>
 </template>
-
-
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
