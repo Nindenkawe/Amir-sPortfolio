@@ -65,6 +65,8 @@
 </div>
 </template>
 
+
+
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
 .housing {

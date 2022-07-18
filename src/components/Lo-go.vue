@@ -8,25 +8,20 @@
 </template>
 
 <style scoped>
-    .top-rightlogo{
+    .top-rightlogo {
         position: absolute;
-        top: 8px;
-        right: 12px;
-        font-size: 22px;
-        padding: auto;
-        border: 2px solid darkgreen;
-        border-radius: 10px;
+        top: 10px;
+        right: 0px;
         background-color: black;
+        border-radius: 5px;
+        border: 2px solid darkgreen;
     }
     .arabic-name{
-        position: flex;
         color: gold;
-        padding: 0%;
-
+        
     }
     .nindenkawe-1{
-        display: flex;
         color: gold;
-        padding: 0%;
     }
+   
 </style>

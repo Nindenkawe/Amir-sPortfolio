@@ -23,7 +23,7 @@
     .menu{
         position: absolute;
         text-align: center;
-        background-color: #333; 
+        background-color: #152B39; 
         overflow: hidden;
         border-radius: 10px;
         width: 238px;

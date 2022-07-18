@@ -61,7 +61,7 @@ export default {
   text-align: center;
 }
 body{
-  background-color: #333;
+  background-color: #152B39;
 
 }
 </style>

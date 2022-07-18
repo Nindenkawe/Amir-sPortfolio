@@ -250,7 +250,7 @@ export default {
   margin-bottom: 2em;
 }
 img {
-  border: 5px solid darkgreen;
+  border: 2px solid darkgreen;
 }
 .input-line {
   display: -webkit-box;

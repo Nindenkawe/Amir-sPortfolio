@@ -25,14 +25,14 @@
         width: 453px;
         height: 56px;
         left: 0px;
-        top: 668px;
+        top: 648px;
     }
     .copyright{
         position: inherit;
         width: 453px;
         height: 56px;
         left: 639px;
-        top: 70px;
+        top: 50px;
         color: gold;
         border-radius: 10px;
         border: 2px solid darkgreen;
