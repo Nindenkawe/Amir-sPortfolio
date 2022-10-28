@@ -248,6 +248,7 @@ export default {
 }
 #banner {
   margin-bottom: 2em;
+  text-align: center;
 }
 img {
   border: 2px solid darkgreen;

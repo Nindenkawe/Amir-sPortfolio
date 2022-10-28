@@ -1,12 +1,12 @@
 <template>
-    <div class="bottomfooter">
+    <div class="">
         {{Memoji1}}
         <div class="copyright"><p><b>©️ 2022</b> nindenkawe.rw </p>
             <div class="social">
                 <ul>
-                    <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
                     <li><a href="#"><i class="fa fa-lg fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -20,22 +20,14 @@
 </script>
 
 <style scoped>
-    .bottomfooter{
-        position: absolute;
-        width: 453px;
-        height: 56px;
-        left: 0px;
-        top: 648px;
-    }
     .copyright{
-        position: inherit;
-        width: 453px;
-        height: 56px;
-        left: 639px;
-        top: 50px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: -1rem;
         color: gold;
-        border-radius: 10px;
-        border: 2px solid darkgreen;
+        text-align: center;
     }
 
     .social {

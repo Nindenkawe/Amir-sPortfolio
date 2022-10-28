@@ -1,17 +1,19 @@
 <template>
-  <Logo1 />
-  <rackserver />
-  <Footer1 :Memoji="Memoji1"/>
+  <Logo />
+  <Aboutme/>
+  <Rackserver />
+  <Footer />
 </template>
 
 <script>
-  import Logo1 from '../components/Lo-go.vue'
-  import Footer1 from '../components/Foo-ter.vue'
-  import rackserver from '../components/rack-server'
+  import Logo from '../components/Lo-go.vue'
+  import Footer from '../components/Foo-ter.vue'
+  import Rackserver from '../components/rack-server.vue'
+  import Aboutme from '../components/about-me.vue'
   export default {
     name: 'Resume-View',
     components: {
-      Logo1, Footer1,rackserver
+      Logo,Footer,Rackserver,Aboutme
     },
   }
 </script>
