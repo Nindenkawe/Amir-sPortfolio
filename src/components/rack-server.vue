@@ -72,7 +72,7 @@
   position: absolute;
   width: 250px;
   height: 525px;
-  top: 210px;
+  top: 193px;
   left: 5px;
   border-radius: 2px;
   border: 8px solid #151515;

@@ -36,12 +36,12 @@ export default {
     prompt(value) {
       if (value.trim() === "AboutMe") {
         this.send_to_terminal = `
-      Hi am Nindenkawe اَمير. welcome to my portfolio website. I'm a back-end Web developer, Debugger, & a Technology enthusias, 
-      confortable in Python, JavaScript, with a broad understanding of Django, Django_rest frameworks, and VueJs. 
-        Other skills I acquired during my time in the telecom industry especially in MTN data solutions department as 
-          a data and UX support consultant include ADB, GSM and it's network spectrum, Mobile and Web-apps literacy. 
-              I'm hardworking, a quick learner, highly organized and a great team player. 
-                        For more about me check my socials.`;
+      Hi am Nindenkawe اَمير. welcome to my portfolio website. I'm a back-end Web developer, Debugger, & a Technology
+      enthusias, confortable in Python, JavaScript, with a broad understanding of Django, Django_rest frameworks,
+      and VueJs. Other skills I acquired during my time in the telecom industry especially in MTN data solutions 
+      department as a data and UX support consultant include ADB, GSM and it's network spectrum, Mobile and Web-apps 
+      literacy. I'm hardworking, a quick learner, highly organized and a great team player. 
+      For more about me check my socials.`;
       } 
       else {
         this.send_to_terminal = `'${value}' is not recognized as an internal command or external,

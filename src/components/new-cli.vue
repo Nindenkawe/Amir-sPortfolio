@@ -50,7 +50,7 @@ export default {
       required: false,
       default: () => {
         return {
-          header: "Hi am Nindenkawe اَمير",
+          header: "Hi am Nindenkawe اَمير(Amir)",
           subHeader: "Welcome to my portfolio web-app🔥",
           helpHeader: 'Enter "help" for a command list.',
           emoji: {
@@ -61,7 +61,7 @@ export default {
           sign: "nindenkawe@Portfolio $",
           img: {
             align: "left",
-            link: `./assets/bitme/banner.png`,
+            link: `../assets/bitme/banner.png`,
             width: 100,
             height: 100
           }

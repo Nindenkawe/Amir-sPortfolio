@@ -23,6 +23,7 @@
     .copyright{
         position: absolute;
         right: 0;
+        top: auto;
         bottom: 0;
         left: 0;
         padding: -1rem;

@@ -1,5 +1,6 @@
 <template>
-    <div class="bd-example">
+<section class="resumesection">
+  <div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -38,5 +39,23 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+  </div>
+</section>
 </template>
+
+<style>
+  .resumesection{
+      position: absolute;
+      width: 1020px;
+      height: 497px;
+      left: 328px;
+      top: 168px;
+      border-radius: 10px;
+      border: 2px solid darkgreen;
+      color: gold;
+      background-color: black;
+      font-size: 11pt;
+      font-family: Inconsolata, monospace;
+      padding: 0.5em 1.5em 1em 1em;
+  }
+</style>

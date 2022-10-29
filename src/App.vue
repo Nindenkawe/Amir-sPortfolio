@@ -21,4 +21,7 @@
         top: 69px;
         border: 2px solid darkgreen;
     }
+    b{
+        color: gold;
+    }
 </style>
