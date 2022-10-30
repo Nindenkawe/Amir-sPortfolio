@@ -60,6 +60,12 @@
 </div>
 </template>
 
+<script>
+export default{
+  mounted 
+}
+</script>
+
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
 .housing {
