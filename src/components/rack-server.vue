@@ -12,37 +12,22 @@
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='#'>ESP8266.py</a>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='medium'>
       <a href='https://github.com/Nindenkawe/ESP8266_ON_OFF_Simi_Serial_Data_Import'>Arduino_serial_data_reader.py</a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='https://github.com/Nindenkawe/BulkP'>BuklPay</a>
+      <a href='https://github.com/Nindenkawe/BulkP'>Data Visualisation with Python</a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='#'>LKU's Portfolio</a>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='medium'>
-      <a href='#'>Micropython-Mfrc522</a>
+      <a href='https://github.com/Nindenkawe/BulkP'>IHUTE</a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='large'>
-      <a href='#'>Data Visualisation with Python</a>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='large'>
-      <a href='#'>IHUTE</a>
+      <a href='#'>My version of RSE.rw</a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
@@ -61,6 +46,16 @@
 <!--       <div class='light'></div>
       <div class='light'></div> -->
     </li>
+    <li class='large'>
+      <a href='#'>...</a>
+<!--       <div class='light'></div>
+      <div class='light'></div> -->
+    </li>
+    <li class='large'>
+      <a href='#'>...</a>
+<!--       <div class='light'></div>
+      <div class='light'></div> -->
+    </li>
   </ul>
 </div>
 </template>
@@ -72,7 +67,7 @@
   position: absolute;
   width: 250px;
   height: 525px;
-  top: 193px;
+  top: 202px;
   left: 5px;
   border-radius: 2px;
   border: 8px solid #151515;

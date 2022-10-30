@@ -6,14 +6,13 @@
           <img
             v-if="banner.img"
             :align="banner.img.align ? banner.img.align : 'left'"
-            :src="banner.img.link ? banner.img.link : '@/banner.png'"
+            :src="banner.img.link ? banner.img.link : ''"
             :width="banner.img.width ? banner.img.width : '100px'"
             :height="banner.img.height ? banner.img.height : '100px'"
           />
         <h2 v-if="banner.header" style="letter-spacing: 4px">{{banner.header}}</h2>
         <p v-if="banner.subHeader">{{banner.subHeader}}</p>
         <p v-if="banner.helpHeader">{{banner.helpHeader}}</p>
-        <!-- <p>{{Portfoliodata}}</p> -->
       </div>
       <output ref="output"></output>
       <div id="input-line" class="input-line">
@@ -61,7 +60,7 @@ export default {
           sign: "nindenkawe@Portfolio $",
           img: {
             align: "left",
-            link: `../assets/bitme/banner.png`,
+            link: `../assets/bitme/goodwrk.png`,
             width: 100,
             height: 100
           }
@@ -100,7 +99,7 @@ export default {
       var tab = [
         { name: "help", desc: "Show all the commands" },
         { name: "clear", desc: "Clear all output" },
-        { name: "AboutMe", desc: "Small bio, also feel free to navigate my Resume and socials"}
+        { name: "Aboutme", desc: "Small bio, also feel free to navigate my Resume and socials"}
       ];
       if (this.commands) {
         this.commands.forEach(({ name, desc }) => {
@@ -211,17 +210,6 @@ export default {
       this.value = "";
     }
   },
-  mounted() {
-    if (
-      this.banner.emoji.first &&
-      this.banner.emoji.second &&
-      this.banner.emoji.time
-    ) {
-      setInterval(() => {
-        this.showemoji = !this.showemoji;
-      }, this.banner.emoji.time);
-    }
-  }
 };
 </script>
 

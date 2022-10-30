@@ -26,15 +26,9 @@ export default {
     };
 
   },
-    mounted() {
-      fetch("http://localhost:3000/portfolio")
-        .then(res => res.json())
-        .then(data => this.Portfoliodata=data)
-        .catch(err => console.log(err.message))
-    },
     methods: {
     prompt(value) {
-      if (value.trim() === "AboutMe") {
+      if (value.trim() === "Aboutme") {
         this.send_to_terminal = `
       Hi am Nindenkawe اَمير. welcome to my portfolio website. I'm a back-end Web developer, Debugger, & a Technology
       enthusias, confortable in Python, JavaScript, with a broad understanding of Django, Django_rest frameworks,

@@ -8,9 +8,9 @@
     <h5 class="card-title">My Cv</h5>
     <h6 class="card-subtitle mb-2 text-muted">loding links...</h6>
     <p class="card-text">links to my Curriculum vitae & certificates</p>
-    <a href="#" class="card-link">CV</a><br>
-    <a href="#" class="card-link">CS50 cert</a><br>
-    <a href="#" class="card-link">Comptia++ cert</a>
+    <a href="https://docs.google.com/document/d/1AlDBkqS5EMVm2bL_TGbeQUM_OaYRjPyu8Yo1pe7Ckvk/edit?usp=sharing" class="card-link">CV</a><br>
+    <a href="#" class="card-link">Edx web dev with Python & JavaScript</a><br>
+    <a href="#" class="card-link">CodeCademy Visualize Data with Python</a> 
   </div>
   </div>
   <div class="git">
