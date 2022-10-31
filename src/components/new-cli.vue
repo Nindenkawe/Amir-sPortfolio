@@ -60,9 +60,10 @@ export default {
           sign: "nindenkawe@Portfolio $",
           img: {
             align: "left",
-            link: `../assets/bitme/goodwrk.png`,
+            link: `amiritius@gmail.com`,
             width: 100,
-            height: 100
+            height: 100,
+            Image: "https://avatars.githubusercontent.com/u/47020256?v=4"
           }
         };
       }

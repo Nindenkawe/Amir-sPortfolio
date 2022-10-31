@@ -60,11 +60,6 @@
 </div>
 </template>
 
-<script>
-export default{
-  mounted 
-}
-</script>
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
@@ -73,7 +68,7 @@ export default{
   position: absolute;
   width: 250px;
   height: 525px;
-  top: 202px;
+  top: 200px;
   left: 5px;
   border-radius: 2px;
   border: 8px solid #151515;
