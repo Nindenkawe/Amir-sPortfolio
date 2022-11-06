@@ -3,14 +3,14 @@
   <Rackserver />
   <Footer />
   <section class="cv">
-    <div class="card" style="width: 18rem;">
+    <div class="card-dark" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">My Cv</h5>
     <h6 class="card-subtitle mb-2 text-muted">loding links...</h6>
     <p class="card-text">links to my Curriculum vitae & certificates</p>
-    <a href="https://docs.google.com/document/d/1AlDBkqS5EMVm2bL_TGbeQUM_OaYRjPyu8Yo1pe7Ckvk/edit?usp=sharing" class="card-link">CV</a><br>
-    <a href="#" class="card-link">Edx web dev with Python & JavaScript</a><br>
-    <a href="#" class="card-link">CodeCademy Visualize Data with Python</a> 
+    <a href="https://docs.google.com/document/d/1AlDBkqS5EMVm2bL_TGbeQUM_OaYRjPyu8Yo1pe7Ckvk/edit?usp=sharing" class="card-link">CV</a><br><br>
+    <a href="#" class="card-link"><b>Cert:</b>Edx web dev with Python & JavaScript</a><br><br>
+    <a href="#" class="card-link"><b>Cert:</b>CodeCademy Visualize Data with Python</a> 
   </div>
   </div>
   <div class="git">
@@ -45,6 +45,8 @@
   font-size: 11pt;
   font-family: Inconsolata, monospace;
   padding: 0.5em 1.5em 1em 1em;
+  box-shadow: 2px 2px 5px darkgreen;
+  
 }
 .git{
   position: absolute;

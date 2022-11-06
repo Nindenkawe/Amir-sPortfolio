@@ -1,12 +1,12 @@
 <template>
-<div class="new-cli">
+<div id="new-cli" class="container-fluid">
   <div @click="$refs.cmd.focus();">
     <div ref="terminal" id="container">
       <div v-if="banner" id="banner">
           <img
             v-if="banner.img"
             :align="banner.img.align ? banner.img.align : 'left'"
-            :src="banner.img.link ? banner.img.link : ''"
+            :src="banner.img.link ? banner.img.link : 'img'"
             :width="banner.img.width ? banner.img.width : '100px'"
             :height="banner.img.height ? banner.img.height : '100px'"
           />
@@ -98,7 +98,7 @@ export default {
   computed: {
     allcommands() {
       var tab = [
-        { name: "help", desc: "Show all the commands" },
+        { name: "help", desc: "command list" },
         { name: "clear", desc: "Clear all output" },
         { name: "Aboutme", desc: "Small bio, also feel free to navigate my Resume and socials"}
       ];
@@ -215,7 +215,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-  .new-cli{
+  #new-cli{
       position: absolute;
       width: 1020px;
       height: 497px;
@@ -228,6 +228,8 @@ export default {
       font-size: 11pt;
       font-family: Inconsolata, monospace;
       padding: 0.5em 1.5em 1em 1em;
+      overflow: scroll;
+      box-shadow: 2px 2px 5px darkgreen;
   }
 
 #container output {

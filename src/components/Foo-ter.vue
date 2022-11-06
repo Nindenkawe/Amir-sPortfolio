@@ -1,23 +1,39 @@
 <template>
-    <div class="">
-        {{Memoji1}}
-        <div class="copyright"><p><b>©️ 2022</b> nindenkawe.rw </p>
-            <div class="social">
-                <ul>
-                    <li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-lg fa-github"></i></a></li>
-                    <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</template>
+<div class="copyright">
+<footer class="text-center text-gold">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
 
-<script>
-    export default{
-        props:['Memoji1']
-  }
-</script>
+      <!-- Twitter -->
+      <a class="btn-l btn-outline-dark btn-floating m-1" href="https://mobile.twitter.com/amiritius" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn-l btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/nindenkawe-amir-5713bb7a" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn-l btn-outline-dark btn-floating m-1" href="https://github.com/Nindenkawe" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://nindenkawe.rw/"><b>nindenkawe.rw</b></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</div>     
+</template>
 
 <style scoped>
     .copyright{
@@ -30,58 +46,11 @@
         color: gold;
         text-align: center;
     }
-
-    .social {
-    margin: 0;
-    padding: 0;
-}
-
-    .social ul {
-        margin: 0;
-        padding: 5px;
+    b{
+        color: gold;
+    }
+    a{
+        color: gold;
     }
 
-    .social ul li {
-        margin: 5px;
-        list-style: none outside none;
-        display: inline-block;
-    }
-
-    .social i {
-        width: 40px;
-        height: 40px;
-        color: #FFF;
-        background-color: #909AA0;
-        font-size: 22px;
-        text-align:center;
-        padding-top: 12px;
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -o-border-radius: 50%;
-        transition: all ease 0.3s;
-        -moz-transition: all ease 0.3s;
-        -webkit-transition: all ease 0.3s;
-        -o-transition: all ease 0.3s;
-        -ms-transition: all ease 0.3s;
-    }
-
-    .social i:hover {
-        color: #FFF;
-        text-decoration: none;
-        transition: all ease 0.3s;
-        -moz-transition: all ease 0.3s;
-        -webkit-transition: all ease 0.3s;
-        -o-transition: all ease 0.3s;
-        -ms-transition: all ease 0.3s;
-    }
-    .social .fa-twitter:hover { /* round twitter icon*/
-    background: #00ABE3;
-}
-    .social .fa-github:hover { /* round github icon*/
-    background: #343434;
-}
-    .social .fa-linkedin:hover { /* round linkedin icon*/
-    background: #0094BC;
-}
 </style>

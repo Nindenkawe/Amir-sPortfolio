@@ -1,4 +1,4 @@
-;(function (window, document, undefined) {
+(function (window, document, undefined) {
     var door = $('.door'),
         handle = $('.handle'),
         rack = $('.rack');

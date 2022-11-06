@@ -20,6 +20,7 @@
         left: 755px;
         top: 69px;
         border: 2px solid darkgreen;
+        box-shadow: 2px 2px 5px darkgreen;
     }
     b{
         color: gold;

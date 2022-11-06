@@ -17,6 +17,10 @@
         background-color: black;
         border-radius: 5px;
         border: 2px solid darkgreen;
+        box-shadow: 2px 2px 5px darkgreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .nindenkawe-1{
         color: gold;

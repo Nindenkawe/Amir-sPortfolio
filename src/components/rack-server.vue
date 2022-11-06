@@ -7,37 +7,37 @@
   <div class='foot'></div>
   <ul class='rack'>
     <li class='medium'>
-      <a href='https://github.com/Nindenkawe/Amir-sPortfolioWeb-App'>MyPortfolio Web-app</a>
+      <a href='https://github.com/Nindenkawe/Amir-sPortfolioWeb-App'><b>MyPortfolio Web-app</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='https://github.com/Nindenkawe/ESP8266_ON_OFF_Simi_Serial_Data_Import'>Arduino_serial_data_reader.py</a>
+      <a href='https://github.com/Nindenkawe/ESP8266_ON_OFF_Simi_Serial_Data_Import'><b>Arduino_serial_data_reader.py</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='https://github.com/Nindenkawe/BulkP'>Data Visualisation with Python</a>
+      <a href='https://github.com/Nindenkawe/BulkP'><b>Data Visualisation with Python</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='https://github.com/Nindenkawe/BulkP'>IHUTE</a>
+      <a href='https://github.com/Nindenkawe/BulkP'><b>IHUTE</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='large'>
-      <a href='#'>My version of RSE.rw</a>
+      <a href='#'><b>My version of RSE.rw</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='large'>
-      <a href='#'>CS50W Projects</a>
+      <a href='#'><b>CS50W Projects</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='large'>
-      <a href='#'>Vitisho Digital Magazine</a>
+      <a href='#'><b>Vitisho Digital Magazine</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
@@ -59,7 +59,15 @@
   </ul>
 </div>
 </template>
-
+<script>
+  export default{
+    mounted() {
+    let rackfunc = document.createElement('rackfunc')
+    rackfunc.setAttribute('src', '../rackfunc.js')
+    document.head.appendChild(rackfunc)
+  },
+  }
+</script>
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
@@ -68,12 +76,13 @@
   position: absolute;
   width: 250px;
   height: 525px;
-  top: 200px;
+  top: 203px;
   left: 5px;
   border-radius: 2px;
   border: 8px solid #151515;
   background-color: #151515;
   box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px darkgreen;
 }
 
 .door {
@@ -156,7 +165,7 @@
 }
 .rack a {
   text-decoration: none;
-  color: #16a8c7;
+  color: gold;
 }
 .rack a:hover {
   text-decoration: underline;
