@@ -43,14 +43,14 @@
         bottom: 0;
         left: 0;
         padding: -1rem;
-        color: gold;
+        color: #ccd6f6;
         text-align: center;
     }
     b{
-        color: gold;
+        color: #ccd6f6;
     }
     a{
-        color: gold;
+        color: #ccd6f6;
     }
 
 </style>

@@ -14,7 +14,7 @@
   </div>
   </div>
   <div class="git">
-    <img style="position: relative; color: gold;" src="https://ghchart.rshah.org/409ba5/Nindenkawe" alt="Nindankawe's git contribution" />
+    <img style="position: relative; color: gold;" src="https://ghchart.rshah.org/Nindenkawe" alt="Nindankawe's git contribution" />
   </div>
   </section>
 </template>
@@ -39,13 +39,13 @@
   left: 328px;
   top: 168px;
   border-radius: 10px;
-  border: 2px solid darkgreen;
-  color: gold;
+  border: 2px solid #8892b0;
+  color: #ccd6f6;
   background-color: black;
   font-size: 11pt;
   font-family: Inconsolata, monospace;
   padding: 0.5em 1.5em 1em 1em;
-  box-shadow: 2px 2px 5px darkgreen;
+  box-shadow: 2px 2px 5px #8892b0;
   
 }
 .git{

@@ -82,7 +82,7 @@
   border: 8px solid #151515;
   background-color: #151515;
   box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 5px darkgreen;
+  box-shadow: 2px 2px 5px #8892b0;
 }
 
 .door {

@@ -16,14 +16,14 @@
         right: 0px;
         background-color: black;
         border-radius: 5px;
-        border: 2px solid darkgreen;
-        box-shadow: 2px 2px 5px darkgreen;
+        border: 2px solid #8892b0;
+        box-shadow: 2px 2px 5px #8892b0;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .nindenkawe-1{
-        color: gold;
+        color: #ccd6f6;
     }
    
 </style>

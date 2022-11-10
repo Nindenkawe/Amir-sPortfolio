@@ -63,7 +63,7 @@ export default {
             link: `amiritius@gmail.com`,
             width: 100,
             height: 100,
-            Image: "https://avatars.githubusercontent.com/u/47020256?v=4"
+            Image: ""
           }
         };
       }
@@ -222,14 +222,14 @@ export default {
       left: 328px;
       top: 168px;
       border-radius: 10px;
-      border: 2px solid darkgreen;
-      color: gold;
+      border: 2px solid #8892b0;
+      color: #ccd6f6;
       background-color: black;
       font-size: 11pt;
       font-family: Inconsolata, monospace;
       padding: 0.5em 1.5em 1em 1em;
       overflow: scroll;
-      box-shadow: 2px 2px 5px darkgreen;
+      box-shadow: 2px 2px 5px #8892b0;
   }
 
 #container output {
@@ -242,7 +242,7 @@ export default {
   text-align: center;
 }
 img {
-  border: 2px solid darkgreen;
+  border: 2px solid #8892b0;
 }
 .input-line {
   display: -webkit-box;
@@ -264,7 +264,7 @@ img {
 }
 .prompt {
   white-space: nowrap;
-  color: #3a8b17;
+  color: #ccd6f6;
   margin-right: 7px;
   display: -webkit-box;
   display: -moz-box;
@@ -281,10 +281,5 @@ img {
   font: inherit;
   border: none;
   color: inherit;
-}
-.ls-files {
-  height: 45px;
-  column-width: 100px;
-  color:inherit
 }
 </style>
