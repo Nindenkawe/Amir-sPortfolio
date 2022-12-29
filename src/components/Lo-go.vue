@@ -16,8 +16,8 @@
         right: 0px;
         background-color: black;
         border-radius: 5px;
-        border: 2px solid #8892b0;
-        box-shadow: 2px 2px 5px #8892b0;
+        border: 2px solid black;
+        box-shadow: 2px 2px 5px black;
         display: flex;
         align-items: center;
         justify-content: center;

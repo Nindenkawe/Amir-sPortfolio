@@ -1,43 +1,43 @@
 <template>
 <div class='housing'>
-  <div class='door'>
+<!--   <div class='door'>
     <div class='handle'></div>
-  </div>
+  </div> -->
   <div class='foot'></div>
   <div class='foot'></div>
   <ul class='rack'>
     <li class='medium'>
-      <a href='https://github.com/Nindenkawe/Amir-sPortfolioWeb-App'><b>MyPortfolio Web-app</b></a>
+      <a href='#'><b>MyPortfolio Web-app</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='https://github.com/Nindenkawe/ESP8266_ON_OFF_Simi_Serial_Data_Import'><b>Arduino_serial_data_reader.py</b></a>
+      <a href='#'><b>ESP8266/HCSR04_data_reader</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='https://github.com/Nindenkawe/BulkP'><b>Data Visualisation with Python</b></a>
+      <router-link to="/Data-Viz_ApexCharts"><b>Data-Viz_ApexCharts</b></router-link>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='https://github.com/Nindenkawe/BulkP'><b>IHUTE</b></a>
+      <router-link to="/Data-Viz_D3js"><b>Data-Viz_D3js</b></router-link>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='large'>
-      <a href='#'><b>My version of RSE.rw</b></a>
+      <a href='#'><b>...</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='large'>
-      <a href='#'><b>CS50W Projects</b></a>
+      <a href='#'><b>...</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='large'>
-      <a href='#'><b>Vitisho Digital Magazine</b></a>
+      <a href='#'><b>...</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
@@ -76,16 +76,15 @@
   position: absolute;
   width: 250px;
   height: 525px;
-  top: 203px;
+  top: 193px;
   left: 5px;
   border-radius: 2px;
   border: 8px solid #151515;
   background-color: #151515;
   box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 5px #8892b0;
 }
 
-.door {
+/* .door {
   position: absolute;
   top: 0;
   right: 0;
@@ -137,7 +136,7 @@
   -ms-transform: translate(0, 4px);
   -o-transform: translate(0, 4px);
   transform: translate(0, 4px);
-}
+} */
 
 .foot {
   position: absolute;

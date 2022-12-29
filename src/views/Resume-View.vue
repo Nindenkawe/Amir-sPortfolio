@@ -9,8 +9,8 @@
     <h6 class="card-subtitle mb-2 text-muted">loding links...</h6>
     <p class="card-text">links to my Curriculum vitae & certificates</p>
     <a href="https://docs.google.com/document/d/1AlDBkqS5EMVm2bL_TGbeQUM_OaYRjPyu8Yo1pe7Ckvk/edit?usp=sharing" class="card-link">CV</a><br><br>
-    <a href="#" class="card-link"><b>Cert:</b>Edx web dev with Python & JavaScript</a><br><br>
-    <a href="#" class="card-link"><b>Cert:</b>CodeCademy Visualize Data with Python</a> 
+    <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link" class="card-link"><b>Cert:</b>10x1000 Fintech Foundation Program</a><br><br>
+    <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link" class="card-link"><b>Cert:</b>Google Data Analytics Professional Certificate</a> 
   </div>
   </div>
   <div class="git">
@@ -31,21 +31,20 @@
   }
 </script>
 
-<style>
+<style scoped>
 .cv{
   position: absolute;
   width: 1020px;
   height: 497px;
   left: 328px;
-  top: 168px;
+  top: 120px;
   border-radius: 10px;
-  border: 2px solid #8892b0;
   color: #ccd6f6;
   background-color: black;
   font-size: 11pt;
   font-family: Inconsolata, monospace;
   padding: 0.5em 1.5em 1em 1em;
-  box-shadow: 2px 2px 5px #8892b0;
+  
   
 }
 .git{
