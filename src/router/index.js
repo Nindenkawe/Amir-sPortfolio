@@ -24,12 +24,12 @@ const routes = [
     component: () => import(/* webpackChunkName: "DataViz" */ '../views/Data-Viz_Apexcharts.vue')
   },
   {
-    path: '/Data-Viz_D3js',
-    name: 'Data-Viz_D3js',
+    path: '/Data-Viz_VueCharts',
+    name: 'Data-Viz_VueCharts',
     // route level code-splitting
     // this generates a separate chunk (services.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "DataViz" */ '../views/Data-Viz_D3js.vue')
+    component: () => import(/* webpackChunkName: "DataViz" */ '../views/Data-Viz_VueCharts.vue')
   }
 ]
 

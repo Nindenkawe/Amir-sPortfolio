@@ -57,7 +57,7 @@
   import Rackserver from '../components/rack-server.vue'
   
   export default {
-    name: 'Apex-Charts',
+    name: 'Apex-harts',
     components: {
       Logo, Footer, Rackserver, apexchart: VueApexCharts
     },

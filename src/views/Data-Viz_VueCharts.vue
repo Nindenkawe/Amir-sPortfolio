@@ -1,6 +1,7 @@
 <template>
   <Logo />
-    <div class="wrapper">
+  <div class="wrapper">
+   
   </div>
   <Rackserver />
   <Footer />
@@ -9,15 +10,14 @@
 <script>
   import Logo from '../components/Lo-go.vue'
   import Footer from '../components/Foo-ter.vue'
-  /* import * as d3 from 'd3' */
   import Rackserver from '../components/rack-server.vue'
   
   export default {
-    name: 'D3-js',
+    name: 'Vue-Charts',
     components: {
-      Logo, Footer, Rackserver, 
-    }
-  }
+      Logo, Footer, Rackserver
+    },
+}
 </script>
 
 <style scoped>
@@ -30,7 +30,7 @@
   border-radius: 10px;
   border: 2px solid black;
   color: darkgreen;
-  background-color: black;
+  background-color: whitesmoke;
   font-size: 11pt;
   font-family: Inconsolata, monospace;
   padding: 0.5em 1.5em 1em 1em;
