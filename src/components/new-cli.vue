@@ -1,29 +1,25 @@
 <template>
 <div id="new-cli" class="container-fluid">
+  <div class="img">
+    <img class="rounded w-36 h-36" src="../assets/bitme/banner.png" alt="Extra large avatar"/>
+  </div>
   <div @click="$refs.cmd.focus();">
     <div ref="terminal" id="container">
       <div v-if="banner" id="banner">
-          <img
-            v-if="banner.img"
-            :align="banner.img.align ? banner.img.align : 'left'"
-            :src="banner.img.link ? banner.img.link : 'img'"
-            :width="banner.img.width ? banner.img.width : '100px'"
-            :height="banner.img.height ? banner.img.height : '100px'"
-          />
-        <h2 v-if="banner.header" style="letter-spacing: 4px">{{banner.header}}
+        <h4 v-if="banner.header" style="letter-spacing: 4px">{{banner.header}}
           <b>
-          <span>{{banner.Amir.normal}}</span>
-          <span>{{banner.Amir.arabic}}</span>
+          <span>{{banner.Amir.En}}</span>
+          <span>{{banner.Amir.Arb}}</span>
           </b>
-        </h2>
+        </h4>
         <p v-if="banner.subHeader">{{banner.subHeader}}</p>
         <p v-if="banner.helpHeader">{{banner.helpHeader}}</p>
       </div>
       <output ref="output"></output>
       <div id="input-line" class="input-line">
         <div class="prompt">
-          <span v-if="banner.emoji.day && !showemoji">{{banner.emoji.day}}</span>
-          <span v-if="banner.emoji.night && showemoji">{{banner.emoji.night}}</span>
+          <span v-if="banner.emoji.earth && !showemoji">{{banner.emoji.earth}}</span>
+          <span v-if="banner.emoji.gemini && showemoji">{{banner.emoji.gemini}}</span><b>|</b>
           <div>{{banner.sign ? banner.sign : '>>'}}</div>
         </div>
 
@@ -58,13 +54,13 @@ export default {
           subHeader: "Welcome to my portfolio web-app🔥",
           helpHeader: 'Enter "help" for a command list.',
           Amir: {
-            normal: "Amir",
-            arabic: "اَمير",
+            En: "Amir",
+            Arb: "اَمير",
             time: 750
           },
           emoji: {
-            day: "🔆",
-            night: "🌙",
+            earth: "🌍",
+            gemini: "♊",
             time: 750
           },
           sign: "nindenkawe@Portfolio $",
@@ -250,9 +246,12 @@ export default {
 #banner {
   margin-bottom: 2em;
   text-align: center;
+  top: auto;
 }
-img {
-  border: 2px solid #8892b0;
+.img {
+  border: 2px solid black;
+  width: 100px;
+  height: auto;
 }
 .input-line {
   display: -webkit-box;

@@ -17,22 +17,22 @@
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <router-link to="/Data-Viz_ApexCharts"><b>RWSYB Transpotation</b></router-link>
+      <router-link to="/Data-Viz_ApexCharts"><b>RW_SYB key_info</b></router-link>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <router-link to="/Data-Viz_VueCharts"><b>RWSYB Demographic & Health</b></router-link>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='large'>
-      <a href='#'><b>RSE.rw</b></a>
+      <router-link to="/My_version_of_RSE.rw"><b>My version of RSE.rw</b></router-link>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='large'>
       <a href='#'><b>Pharmacy.rw</b></a>
+      <div class='light'></div>
+      <div class='light'></div>
+    </li>
+    <li class='large'>
+      <a href='#'><b>...</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>

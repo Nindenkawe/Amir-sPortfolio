@@ -4,7 +4,7 @@
   <Footer />
   <section class="cv">
     <div class="card-dark" style="width: 18rem;">
-  <div class="card-body">
+    <div class="card-body">
     <h5 class="card-title">My Cv</h5>
     <h6 class="card-subtitle mb-2 text-muted">loding links...</h6>
     <p class="card-text">links to my Curriculum vitae & certificates</p>
@@ -12,6 +12,7 @@
     <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link" class="card-link"><b>Cert:</b>10x1000 Fintech Foundation Program</a><br><br>
     <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link" class="card-link"><b>Cert:</b>Google Data Analytics Professional Certificate</a> 
   </div>
+  
   </div>
   <div class="git">
     <img style="position: relative; color: gold;" src="https://ghchart.rshah.org/Nindenkawe" alt="Nindankawe's git contribution" />

@@ -4,52 +4,55 @@
     <div class="row">
       <div class="col">
         ...
-        <apexchart
-      width="500"
-      type="bar"
-      :options="chartOptions"
-      :series="series"
-      >
-      </apexchart>
+        <apexchart 
+        id="RRA"
+        width="500"
+        type="bar"
+        :options="RRA"
+        :series="series"
+        >
+        </apexchart>
       </div>
       <div class="col">
         ...
-        <apexchart
-      width="500"
-      type="bar"
-      :options="chartOptions"
-      :series="series"
-      >
-      </apexchart>
+        <apexchart 
+        id="RRA"
+        width="500"
+        type="area"
+        :options="RRA"
+        :series="series"
+        >
+        </apexchart>
       </div>
     </div>
     <div class="row">
       <div class="col">
         ...
-        <apexchart
-      width="500"
-      type="bar"
-      :options="chartOptions"
-      :series="series"
-      >
-      </apexchart>
+        <apexchart 
+        id="RRA"
+        width="500"
+        type="radar"
+        :options="RRA"
+        :series="series"
+        >
+        </apexchart>
       </div>
       <div class="col">
         ...
-        <apexchart
-      width="500"
-      type="bar"
-      :options="chartOptions"
-      :series="series"
-      >
-      </apexchart>
+        <apexchart 
+        id="RRA"
+        width="500"
+        type="line"
+        :options="RRA"
+        :series="series"
+        >
+        </apexchart>
       </div>
-    </div>
+    </div> 
   </div>
   <Rackserver />
   <Footer />
 </template>
-
 <script>
   import Logo from '../components/Lo-go.vue'
   import Footer from '../components/Foo-ter.vue'
@@ -57,30 +60,65 @@
   import Rackserver from '../components/rack-server.vue'
   
   export default {
-    name: 'Apex-harts',
+    name: 'Apex-charts',
     components: {
       Logo, Footer, Rackserver, apexchart: VueApexCharts
     },
 
-    data: function() {
+  data: function() {
     return {
-      chartOptions: {
+      RRA: {
         chart: {
-          id: "vuechart-example",
+          type: "bar",
+          height: 350
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: '55%',
+            endingShape: 'rounded'
+          },
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          show: true,
+          width: 2,
+          colors: ['transparent']
         },
         xaxis: {
-          categories: ['Vehicles', 'Vehicles Inspected', 'Inspections done', 'Traffic Accidents'],
+          categories: ['NV', 'MI', 'RA', 'CPI', 'GDP', 'LEB', '', '...', '...'],
         },
+        yaxis: {
+          title: {
+            text: 'Source:(RRA & RNP)'
+          }
+        },
+        fill: {
+          opacity: 1
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return val + "Thousands"
+            }
+          }
+        }
         
       },
-      series: [
-        {
-          name: "2018 Data",
-          data: [216.204, 75.375, 145.835, 5.611],
-        },
-        
-      ],
+      series: [{
+        name: '2018',
+        data: [216204, 145835, 5611, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+      }, {
+        name: '2020',
+        data: [244112, 0, 4203, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+      }, {
+        name: '2022',
+        data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+      }],
     }
+
   }
     
   }
