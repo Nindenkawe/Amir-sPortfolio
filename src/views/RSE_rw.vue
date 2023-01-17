@@ -12,7 +12,7 @@
                 </div>
                 <div class="w-1/4 md:w-auto md:flex text-right">
                   <div>
-                    <img class="inline-block h-8 w-8 rounded-full" src="../assets/bitme/404err.png" alt="">
+                    <img class="inline-block h-8 w-8 rounded-full" src="../assets/bitme/mario.png" alt="">
                   </div>
                   <div class="hidden md:block md:flex md:items-center ml-2">
                     <span class="text-white text-sm mr-1">User</span>
