@@ -1,28 +1,27 @@
 <template>
-<div id="new-cli" class="container-fluid">
-  <div class="img">
-    <img class="rounded w-36 h-36" src="../assets/bitme/banner.png" alt="Extra large avatar"/>
-  </div>
-  <div @click="$refs.cmd.focus();">
-    <div ref="terminal" id="container">
-      <div v-if="banner" id="banner">
-        <h4 v-if="banner.header" style="letter-spacing: 4px">{{banner.header}}
-          <b>
-          <span>{{banner.Amir.En}}</span>
-          <span>{{banner.Amir.Arb}}</span>
-          </b>
-        </h4>
-        <p v-if="banner.subHeader">{{banner.subHeader}}</p>
-        <p v-if="banner.helpHeader">{{banner.helpHeader}}</p>
+  <div class="flex justify-center overflow-scroll ">
+    <div class="max-w-lg p-4 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div class="float-none" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+        <img class="rounded w-36 h-36" src="../assets/bitme/banner.png" alt="Extra large avatar">
       </div>
-      <output ref="output"></output>
-      <div id="input-line" class="input-line">
+      <h4 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" v-if="banner.header" style="letter-spacing: 4px">{{banner.header}}
+      <b>
+      <span>{{banner.Amir.En}}</span>
+      <span>{{banner.Amir.Arb}}</span>
+      </b>
+      </h4>
+      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400" v-if="banner.subHeader">{{banner.subHeader}}</p>
+      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400" v-if="banner.helpHeader">{{banner.helpHeader}}</p>
+  
+      <div id="input-line">
         <div class="prompt">
           <span v-if="banner.emoji.earth && !showemoji">{{banner.emoji.earth}}</span>
           <span v-if="banner.emoji.gemini && showemoji">{{banner.emoji.gemini}}</span><b>|</b>
-          <div>{{banner.sign ? banner.sign : '>>'}}</div>
         </div>
-
+        <a href="/"><div>{{banner.sign ? banner.sign : '>>'}}</div></a>
+      </div>
+      <div>
+        <p class="flex inset-x-0 bottom-0 h-16">
         <input
           v-model="value"
           ref="cmd"
@@ -30,14 +29,20 @@
           @keydown.up="history_up()"
           @keydown.down="history_down()"
           @keydown.tab="cmd_tab($event)"
-          class="cmdline"
+          class="placeholder:italic placeholder:text-slate-400 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required placeholder="Search for anything..." type="text" name="search"
           autofocus
         />
+        <output class="overflow-scroll" ref="output"></output>
+        </p>
       </div>
     </div>
   </div>
-  </div>
-</template>
+ </template>
+
+
+
+
+
 
 <script>
 export default {
@@ -219,76 +224,3 @@ export default {
   },
 };
 </script>
-
-<style lang="css" scoped>
-  #new-cli{
-      position: absolute;
-      width: 1020px;
-      height: 497px;
-      left: 328px;
-      top: 120px;
-      border-radius: 10px;
-      border: 2px solid black;
-      color: #ccd6f6;
-      background-color: black;
-      font-size: 11pt;
-      font-family: Inconsolata, monospace;
-      padding: 0.5em 1.5em 1em 1em;
-      overflow: scroll;
-      box-shadow: 2px 2px 5px black;
-  }
-
-#container output {
-  clear: both;
-  width: 100%;
-  color: inherit;
-}
-#banner {
-  margin-bottom: 2em;
-  text-align: center;
-  top: auto;
-}
-.img {
-  border: 2px solid black;
-  width: 100px;
-  height: auto;
-}
-.input-line {
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-align: stretch;
-  display: -moz-box;
-  -moz-box-orient: horizontal;
-  -moz-box-align: stretch;
-  display: -webkit-box;
-  box-orient: horizontal;
-  box-align: stretch;
-  clear: both;
-}
-
-.input-line > div:nth-child(2) {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  box-flex: 1;
-}
-.prompt {
-  white-space: nowrap;
-  color: #ccd6f6;
-  margin-right: 7px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  box-pack: center;
-  box-orient: vertical;
-  user-select: none;
-}
-.cmdline {
-  outline: none;
-  background-color: transparent;
-  margin: 0;
-  width: 100%;
-  font: inherit;
-  border: none;
-  color: inherit;
-}
-</style>

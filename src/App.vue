@@ -1,29 +1,11 @@
 <template>
-  <nav>
-    <router-link to="/"><div class="btn btn-outline-dark"><b>Home</b></div></router-link> |
-    <router-link to="/Resume"><div class="btn btn-outline-dark"><b>Resume</b></div></router-link>
+  <nav class="flex justify-center space-x-4">
+    <button class="btn-primary">
+      <div class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"><router-link to="/">Home</router-link></div>
+    </button>
+    <button class="btn-primary">
+      <div class="font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"><router-link to="/Resume">Resume</router-link></div>
+    </button> 
   </nav>
   <router-view/>
 </template>
-
-
-<style>
-  body{
-    background: #0a192f;
-  }
-    nav{
-        position: absolute;
-        background-color: inherit; 
-        overflow: hidden;
-        border-radius: 10px;
-        width: auto;
-        height: auto;
-        left: 755px;
-        top: 39px;
-        border: 2px solid #8892b0;
-        box-shadow: 2px 2px 5px #8892b0;
-    }
-    b{
-        color: #ccd6f6;
-    }
-</style>

@@ -1,55 +1,88 @@
 <template>
   <Logo />
-    <div class="wrapper">
-    <div class="row">
-      <div class="col">
-        ...
-        <apexchart 
-        id="RRA"
-        width="500"
-        type="bar"
-        :options="RRA"
-        :series="series"
-        >
-        </apexchart>
-      </div>
-      <div class="col">
-        ...
-        <apexchart 
-        id="RRA"
-        width="500"
-        type="area"
-        :options="RRA"
-        :series="series"
-        >
-        </apexchart>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        ...
-        <apexchart 
-        id="RRA"
-        width="500"
-        type="radar"
-        :options="RRA"
-        :series="series"
-        >
-        </apexchart>
-      </div>
-      <div class="col">
-        ...
-        <apexchart 
-        id="RRA"
-        width="500"
-        type="line"
-        :options="RRA"
-        :series="series"
-        >
-        </apexchart>
-      </div>
-    </div> 
-  </div>
+    <div class="flex justify-center md:container md:mx-auto overscroll-scroll p-4 object-cover h-58 w-96">
+    <div class="absolute max-w-lg p-4 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3 rounded-l-lg">
+                    Product name
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Qty
+                </th>
+                <th scope="col" class="px-6 py-3 rounded-r-lg">
+                    Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="px-6 py-4">
+                    1
+                </td>
+                <td class="px-6 py-4">
+                  <apexchart 
+                    id="RRA"
+                    width="500"
+                    type="bar"
+                    :options="RRA"
+                    :series="series"
+                    >
+                  </apexchart>
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Microsoft Surface Pro
+                </th>
+                <td class="px-6 py-4">
+                    1
+                </td>
+                <td class="px-6 py-4">
+                  <apexchart 
+                    id="RRA"
+                    width="500"
+                    type="radar"
+                    :options="RRA"
+                    :series="series"
+                    >
+                  </apexchart>
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Magic Mouse 2
+                </th>
+                <td class="px-6 py-4">
+                    1
+                </td>
+                <td class="px-6 py-4">
+                  <apexchart 
+                    id="RRA"
+                    width="500"
+                    type="area"
+                    :options="RRA"
+                    :series="series"
+                    >
+                  </apexchart>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="font-semibold text-gray-900 dark:text-white">
+                <th scope="row" class="px-6 py-3 text-base">Total</th>
+                <td class="px-6 py-3">21,000</td>
+            </tr>
+        </tfoot>
+      </table>
+</div>
+</div>
+</div>
   <Rackserver />
   <Footer />
 </template>

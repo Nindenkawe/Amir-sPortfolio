@@ -1,29 +1,7 @@
 <template>
-    <div class="top-rightlogo">
-        <a href="tel:+250788314048">
-            <div class="">
-                <p class="nindenkawe-1">اَمير</p>
-                <p class="nindenkawe-1">Nindenkawe</p>
-            </div>
-        </a>
+    <a href="tel:+250788314048">
+    <div id="toast-top-right" class="absolute flex items-center w-auto max-w-xs p-2 space-x-2 bg-white divide-x divide-gray-200 rounded-lg shadow top-5 right-5 dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800" role="alert">
+    <div class="w-10 h-auto mb-1"><img src="../assets/bg.jpg" alt="Extra large avatar"/></div>
     </div>
+    </a>
 </template>
-
-<style scoped>
-    .top-rightlogo {
-        position: absolute;
-        top: 10px;
-        right: 0px;
-        background-color: black;
-        border-radius: 5px;
-        border: 2px solid black;
-        box-shadow: 2px 2px 5px black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .nindenkawe-1{
-        color: #ccd6f6;
-    }
-   
-</style>

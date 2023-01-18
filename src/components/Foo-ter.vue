@@ -1,56 +1,25 @@
 <template>
-<div class="copyright">
-<footer class="text-center text-gold">
-  <!-- Grid container -->
-  <div class="container p-4 pb-0">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-
-      <!-- Twitter -->
-      <a class="btn-l btn-outline-dark btn-floating m-1" href="https://mobile.twitter.com/amiritius" role="button"
-        ><i class="fab fa-twitter"></i
-      ></a>
-
-      <!-- Linkedin -->
-      <a class="btn-l btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/nindenkawe-amir-5713bb7a" role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-
-      <!-- Github -->
-      <a class="btn-l btn-outline-dark btn-floating m-1" href="https://github.com/Nindenkawe" role="button"
-        ><i class="fab fa-github"></i
-      ></a>
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright:
-    <a class="text-white" href="https://nindenkawe.rw/"><b>nindenkawe.rw</b></a>
-  </div>
-  <!-- Copyright -->
-</footer>
-</div>     
+<footer class="absolute inset-x-0 bottom-0 p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 Copyright: <a href="https://flowbite.com" class="hover:underline" target="_blank">nindenkawe™</a>
+    </span>
+    |
+    <ul class="flex flex-wrap items-center mt-3 sm:mt-0">
+        <li>
+            <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">About</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 text-sm text-gray-500 hover:underline md:mr-6 dark:text-gray-400">Licensing</a>
+        </li>
+        <li>
+            <a href="#" class="text-sm text-gray-500 hover:underline dark:text-gray-400">Contact</a>
+        </li>
+    </ul>
+</footer>    
 </template>
 
 <style scoped>
-    .copyright{
-        position: absolute;
-        right: 0;
-        top: auto;
-        bottom: 0;
-        left: 0;
-        padding: -1rem;
-        color: #ccd6f6;
-        text-align: center;
-    }
-    b{
-        color: #ccd6f6;
-    }
-    a{
-        color: #ccd6f6;
-    }
 
 </style>
