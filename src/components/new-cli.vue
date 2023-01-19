@@ -1,10 +1,11 @@
 <template>
-  <div class="flex justify-center overflow-scroll ">
-    <div class="max-w-lg p-4 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+  <section>
+    <div class="p-4 dark:bg-gray-800 dark:border-gray-700 w-full text-sm text-left text-gray-500 dark:text-gray-400">
       <div class="float-none" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
         <img class="rounded w-36 h-36" src="../assets/bitme/banner.png" alt="Extra large avatar">
       </div>
-      <h4 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" v-if="banner.header" style="letter-spacing: 4px">{{banner.header}}
+      <h4 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" v-if="banner.header" style="letter-spacing: 4px">
+      {{banner.header}}
       <b>
       <span>{{banner.Amir.En}}</span>
       <span>{{banner.Amir.Arb}}</span>
@@ -16,9 +17,9 @@
       <div id="input-line">
         <div class="prompt">
           <span v-if="banner.emoji.earth && !showemoji">{{banner.emoji.earth}}</span>
-          <span v-if="banner.emoji.gemini && showemoji">{{banner.emoji.gemini}}</span><b>|</b>
+          <span v-if="banner.emoji.gemini && showemoji">{{banner.emoji.gemini}}</span>|
+          <h4 href="/"><div>{{banner.sign ? banner.sign : '>>'}}</div></h4>
         </div>
-        <a href="/"><div>{{banner.sign ? banner.sign : '>>'}}</div></a>
       </div>
       <div>
         <p class="flex inset-x-0 bottom-0 h-16">
@@ -29,20 +30,15 @@
           @keydown.up="history_up()"
           @keydown.down="history_down()"
           @keydown.tab="cmd_tab($event)"
-          class="placeholder:italic placeholder:text-slate-400 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required placeholder="Search for anything..." type="text" name="search"
+          class=" placeholder:italic placeholder:text-slate-400 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white w-22 h-9" required placeholder="try help to list..." type="text" name="search"
           autofocus
         />
         <output class="overflow-scroll" ref="output"></output>
         </p>
       </div>
     </div>
-  </div>
+  </section>
  </template>
-
-
-
-
-
 
 <script>
 export default {
@@ -55,8 +51,8 @@ export default {
       required: false,
       default: () => {
         return {
-          header: "Hi am Nindenkawe ",
-          subHeader: "Welcome to my portfolio web-app🔥",
+          header: "Hi am",
+          subHeader: "Welcome to my portfolio page(SPA)",
           helpHeader: 'Enter "help" for a command list.',
           Amir: {
             En: "Amir",

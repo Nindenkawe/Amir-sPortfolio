@@ -1,32 +1,32 @@
 <template>
+  <div class="container mx-auto px-4 flex-col min-h-screen">
   <Logo />
-    <div class="flex justify-center md:container md:mx-auto overscroll-scroll p-4 object-cover h-58 w-96">
-    <div class="absolute max-w-lg p-4 border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-      <div class="relative overflow-x-auto">
+    <Section>
     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
             <tr>
                 <th scope="col" class="px-6 py-3 rounded-l-lg">
-                    Product name
+                    Data source
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Qty
+                    Format
                 </th>
                 <th scope="col" class="px-6 py-3 rounded-r-lg">
-                    Price
+                    Graphs
                 </th>
             </tr>
         </thead>
         <tbody>
             <tr class="bg-white dark:bg-gray-800">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Apple MacBook Pro 17"
+                    Statistics
                 </th>
                 <td class="px-6 py-4">
-                    1
+                    CSV
                 </td>
                 <td class="px-6 py-4">
-                  <apexchart 
+                  <div class="container flex md-w-auto">
+                    <apexchart 
                     id="RRA"
                     width="500"
                     type="bar"
@@ -34,68 +34,54 @@
                     :series="series"
                     >
                   </apexchart>
+                  </div>
                 </td>
             </tr>
             <tr class="bg-white dark:bg-gray-800">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Microsoft Surface Pro
+                    RRA data
                 </th>
                 <td class="px-6 py-4">
-                    1
+                    CSV
                 </td>
                 <td class="px-6 py-4">
-                  <apexchart 
-                    id="RRA"
-                    width="500"
-                    type="radar"
-                    :options="RRA"
-                    :series="series"
-                    >
-                  </apexchart>
+          
                 </td>
             </tr>
             <tr class="bg-white dark:bg-gray-800">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Magic Mouse 2
+                    RNP
                 </th>
                 <td class="px-6 py-4">
-                    1
+                    JSON
                 </td>
                 <td class="px-6 py-4">
-                  <apexchart 
-                    id="RRA"
-                    width="500"
-                    type="area"
-                    :options="RRA"
-                    :series="series"
-                    >
-                  </apexchart>
+
                 </td>
             </tr>
         </tbody>
         <tfoot>
             <tr class="font-semibold text-gray-900 dark:text-white">
-                <th scope="row" class="px-6 py-3 text-base">Total</th>
-                <td class="px-6 py-3">21,000</td>
+                <th scope="row" class="px-6 py-3 text-base">This is a data viz exercise page </th>
+                <td class="px-6 py-3">Data sets are my own from personaly selected sources</td>
             </tr>
         </tfoot>
       </table>
-</div>
-</div>
-</div>
-  <Rackserver />
+</section>
+  <!-- <Rackserver /> -->
   <Footer />
+</div>
 </template>
 <script>
   import Logo from '../components/Lo-go.vue'
   import Footer from '../components/Foo-ter.vue'
   import VueApexCharts from "vue3-apexcharts"
-  import Rackserver from '../components/rack-server.vue'
+  /* import Rackserver from '../components/rack-server.vue' */
   
   export default {
     name: 'Apex-charts',
     components: {
-      Logo, Footer, Rackserver, apexchart: VueApexCharts
+      Logo, Footer, /* Rackserver */ apexchart: VueApexCharts
     },
 
   data: function() {
