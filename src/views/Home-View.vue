@@ -56,14 +56,14 @@ body {
   height: 300px;
   display: block;
   background-color: black;
-  background-image: url("");
-  background-size: 100%;
+  background-image: url("https://img.freepik.com/free-photo/multi-color-fabric-texture-samples_1373-434.jpg?w=900&t=st=1674208954~exp=1674209554~hmac=b0e1ef55f87573ee4b86b682194e0540592939ffc8dc64979806978c4c1eb21d");
+  background-size: 40%;
   font-family: 'Space Mono', monospace;
 }
 section{
-  width: 756px;
+  width: 556px;
   height: 468;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

@@ -1,25 +1,25 @@
 <template>
-  <section>
-    <div class="p-4 dark:bg-gray-800 dark:border-gray-700 w-full text-sm text-left text-gray-500 dark:text-gray-400">
+  <section class="my-5 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+    <div class="text-2xl md:text-2xl container mx-auto p-4 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-gray-400 border-gray-200 rounded-lg shadow-md">
       <div class="float-none" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
         <img class="rounded w-36 h-36" src="../assets/bitme/banner.png" alt="Extra large avatar">
       </div>
-      <h4 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white" v-if="banner.header" style="letter-spacing: 4px">
+      <h4 class="mb-2 text-2xl font-semibold text-gray-900 dark:text-white" v-if="banner.header" style="letter-spacing: 4px">
       {{banner.header}}
       <b>
       <span>{{banner.Amir.En}}</span>
       <span>{{banner.Amir.Arb}}</span>
       </b>
       </h4>
-      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400" v-if="banner.subHeader">{{banner.subHeader}}</p>
-      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400" v-if="banner.helpHeader">{{banner.helpHeader}}</p>
+      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{{banner.subHeader}}</p>
+      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{{banner.helpHeader}}</p>
   
       <div id="input-line">
-        <div class="prompt">
+<!--    <div class="prompt">
           <span v-if="banner.emoji.earth && !showemoji">{{banner.emoji.earth}}</span>
           <span v-if="banner.emoji.gemini && showemoji">{{banner.emoji.gemini}}</span>|
           <h4 href="/"><div>{{banner.sign ? banner.sign : '>>'}}</div></h4>
-        </div>
+        </div> -->
       </div>
       <div>
         <p class="flex inset-x-0 bottom-0 h-16">
@@ -30,10 +30,12 @@
           @keydown.up="history_up()"
           @keydown.down="history_down()"
           @keydown.tab="cmd_tab($event)"
-          class=" placeholder:italic placeholder:text-slate-400 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white w-22 h-9" required placeholder="try help to list..." type="text" name="search"
+          class=" placeholder:italic placeholder:text-slate-400 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+          focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400
+          dark:text-white " required placeholder="try help to list..." type="text" name="search"
           autofocus
         />
-        <output class="overflow-scroll" ref="output"></output>
+        <output class="overflow-auto" ref="output"></output>
         </p>
       </div>
     </div>
