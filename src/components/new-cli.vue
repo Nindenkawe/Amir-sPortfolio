@@ -2,7 +2,7 @@
   <section class="my-5 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
     <div class="text-2xl md:text-2xl container mx-auto p-4 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-gray-400 border-gray-200 rounded-lg shadow-md">
       <div class="float-none" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-        <img class="rounded w-36 h-36" src="../assets/bitme/banner.png" alt="Extra large avatar">
+        <img class="rounded w-36 h-36" src="../assets/bitme/help.png" alt="Extra large avatar">
       </div>
       <h4 class="mb-2 text-2xl font-semibold text-gray-900 dark:text-white" v-if="banner.header" style="letter-spacing: 4px">
       {{banner.header}}
@@ -54,7 +54,7 @@ export default {
       default: () => {
         return {
           header: "Hi am",
-          subHeader: "Welcome to my portfolio page(SPA)",
+          subHeader: "Welcome to my portfolio web-app",
           helpHeader: 'Enter "help" for a command list.',
           Amir: {
             En: "Amir",

@@ -33,12 +33,8 @@ export default {
       if (value.trim() === "Aboutme") {
         this.send_to_terminal = `
   Hi am Nindenkawe اَمير. welcome to my portfolio website. I'm an Aspiring data analyst,
-  backend web developer, comfortable in languages like Python, JavaScript, with a broad 
-  understanding of Django, django_rest framework, and VueJs  plus some favorite web-dev technologies 
-  like, Firebase, and Docker. Other skills I acquired during my time at MTN data solutions department 
-  as a data and UX support consultant include ADB, USSD, Java Card, GSM and its network spectrum, Mobile and web-apps literacy. 
-  I’m hardworking, a quick learner currently pursuing Google’s Data Analytics Certificate, highly organized and a great team player.
-  `;
+  backend web developer, and this portolio web app is designed to work as my note book here you 
+  get to see how i have decided to intergrate what i have learnt and how i think i can use it.`;
       } 
       else {
         this.send_to_terminal = `'${value}' is not recognized as an internal command or external,
