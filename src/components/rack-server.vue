@@ -1,4 +1,5 @@
 <template>
+<div class="">
 <div class='housing'>
 <!--   <div class='door'>
     <div class='handle'></div>
@@ -57,6 +58,7 @@
       <div class='light'></div> -->
     </li>
   </ul>
+</div>
 </div>
 </template>
 <script>

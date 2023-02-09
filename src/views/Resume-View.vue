@@ -3,13 +3,11 @@
 <section class="my-0 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
 <div class="text-2xl md:text-2xl container mx-auto p-4 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-gray-400 border-gray-200 rounded-lg shadow-md">
   <img class="w-10 h-10 rounded" src="../assets/bitme/mario.png" alt="Default avatar"/>
-    <a href="#">
+    <a href="https://github.com/Nindenkawe">
       <div class="w-30 p-4">
       <img style="position: relative; color: gold;" src="https://ghchart.rshah.org/Nindenkawe" alt="Nindankawe's git contribution" />
       </div>
     </a>
-<!--     <blockquote class="max-w-auto mb-3 font-light text-gray-500 dark:text-gray-400">
-    </blockquote> -->
     <div>
       <a href="https://docs.google.com/document/d/1AlDBkqS5EMVm2bL_TGbeQUM_OaYRjPyu8Yo1pe7Ckvk/edit?usp=sharing" class="card-link">
       <b>Curriculum Vitae</b>

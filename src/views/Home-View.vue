@@ -1,22 +1,22 @@
 <template>
-  <div class="container mx-auto px-4 flex-col min-h-screen">
-    <Logo1 />
-    <!-- <rackserver/> -->
-    <newcli :commands="commands" @shell_output="prompt" :shell_input="send_to_terminal"/>
-    <Footer1/>
-  </div>
+  <Logo1 />
+  <newcli :commands="commands" @shell_output="prompt" :shell_input="send_to_terminal"/>
+  <aside>
+    <p><router-link to="/Data-Viz_ApexCharts">Demography</router-link></p>
+    <p><router-link to="/My_version_of_RSE.rw">RSE.rw</router-link></p>
+  </aside>
+  <Footer1/>
 </template>
 
 <script>
   import Logo1 from '../components/Lo-go.vue'
   import Footer1 from '../components/Foo-ter.vue'
   import newcli from '../components/new-cli.vue'
-/*   import rackserver from '../components/rack-server' */
 
 export default {
     name: 'Home-View',
     components: { 
-      Logo1, Footer1, newcli,/* rackserver */
+      Logo1, Footer1, newcli
     },
     data() {
     return {
@@ -42,6 +42,7 @@ export default {
       }
     }
   }
+  
 }
 </script>
 

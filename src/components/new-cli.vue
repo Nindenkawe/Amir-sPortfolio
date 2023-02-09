@@ -4,7 +4,7 @@
       <div class="float-none" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
         <img class="rounded w-36 h-36" src="../assets/bitme/help.png" alt="Extra large avatar">
       </div>
-      <h4 class="mb-2 text-2xl font-semibold text-gray-900 dark:text-white" v-if="banner.header" style="letter-spacing: 4px">
+      <h4 class="mb-2 text-2xl font-semibold text-gray-900 dark:text-white">
       {{banner.header}}
       <b>
       <span>{{banner.Amir.En}}</span>
@@ -12,7 +12,7 @@
       </b>
       </h4>
       <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{{banner.subHeader}}</p>
-      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{{banner.helpHeader}}</p>
+      <!-- <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{{banner.helpHeader}}</p> -->
   
       <div id="input-line">
 <!--    <div class="prompt">
@@ -22,7 +22,7 @@
         </div> -->
       </div>
       <div>
-        <p class="flex inset-x-0 bottom-0 h-16">
+        <div class="flex inset-x-0 bottom-0 h-16">
         <input
           v-model="value"
           ref="cmd"
@@ -32,15 +32,15 @@
           @keydown.tab="cmd_tab($event)"
           class=" placeholder:italic placeholder:text-slate-400 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
           focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400
-          dark:text-white " required placeholder="try help to list..." type="text" name="search"
+          dark:text-white " required placeholder="/message: 'Your message'" type="text" name="search"
           autofocus
         />
         <output class="overflow-auto" ref="output"></output>
-        </p>
+        </div>
       </div>
     </div>
   </section>
- </template>
+</template>
 
 <script>
 export default {
