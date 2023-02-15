@@ -1,5 +1,5 @@
 <template>
-<footer class="fixed inset-x-0 bottom-0 p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+<footer class="fixed inset-x-0 bottom-0 p-4 bg-white shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 Copyright: <a href="https://nindenkawe.rw" class="hover:underline" target="_blank">nindenkawe™</a>
     </span>
     <ul class="flex flex-wrap items-center mt-3 sm:mt-0">

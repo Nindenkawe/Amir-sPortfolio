@@ -1,47 +1,24 @@
 <template>
   <Logo1 />
-  <newcli :commands="commands" @shell_output="prompt" :shell_input="send_to_terminal"/>
-  <aside>
-    <p><router-link to="/Data-Viz_ApexCharts">Demography</router-link></p>
-    <p><router-link to="/My_version_of_RSE.rw">RSE.rw</router-link></p>
+  <main>
+    <newcli/>
+  </main>
+  <aside class="float-none" aria-hidden="true" fill="currentColor" text-2xl md:text-2xl container mx-auto p-4 dark:bg-gray-800 dark:border-gray-700>
+    <rackserver/>
   </aside>
   <Footer1/>
 </template>
 
 <script>
-  import Logo1 from '../components/Lo-go.vue'
-  import Footer1 from '../components/Foo-ter.vue'
-  import newcli from '../components/new-cli.vue'
-
+  import Logo1 from '@/components/Lo-go.vue'
+  import Footer1 from '@/components/Foo-ter.vue'
+  import newcli from '@/components/Info-contactMe.vue'
+  import rackserver from '@/components/Rack-server.vue'
 export default {
     name: 'Home-View',
     components: { 
-      Logo1, Footer1, newcli
-    },
-    data() {
-    return {
-      Portfoliodata:[],
-      Memoji1: null,
-      commands: null,
-      send_to_terminal: null
-      
-    };
-
-  },
-    methods: {
-    prompt(value) {
-      if (value.trim() === "Aboutme") {
-        this.send_to_terminal = `
-  Hi am Nindenkawe اَمير. welcome to my portfolio website. I'm an Aspiring data analyst,
-  backend web developer, and this portolio web app is designed to work as my note book here you 
-  get to see how i have decided to intergrate what i have learnt and how i think i can use it.`;
-      } 
-      else {
-        this.send_to_terminal = `'${value}' is not recognized as an internal command or external,
-          executable program or a batch file`;
-      }
+      Logo1, Footer1, newcli, rackserver
     }
-  }
   
 }
 </script>
@@ -52,8 +29,8 @@ export default {
 body {
   height: 300px;
   display: block;
-  background-color: black;
-  background-image: url("https://img.freepik.com/free-photo/multi-color-fabric-texture-samples_1373-434.jpg?w=900&t=st=1674208954~exp=1674209554~hmac=b0e1ef55f87573ee4b86b682194e0540592939ffc8dc64979806978c4c1eb21d");
+  background-color: rgb(5, 148, 60);
+  /* background-image: url("https://img.freepik.com/free-photo/multi-color-fabric-texture-samples_1373-434.jpg?w=900&t=st=1674208954~exp=1674209554~hmac=b0e1ef55f87573ee4b86b682194e0540592939ffc8dc64979806978c4c1eb21d"); */
   background-size: 40%;
   font-family: 'Space Mono', monospace;
 }

@@ -1,5 +1,5 @@
 <template>
-<div class="">
+<div class="w-60 h-auto shadow-md bg-white px-1 absolute">
 <div class='housing'>
 <!--   <div class='door'>
     <div class='handle'></div>
@@ -78,7 +78,7 @@
   position: absolute;
   width: 250px;
   height: 525px;
-  top: 193px;
+  top: 65px;
   left: 5px;
   border-radius: 2px;
   border: 8px solid #151515;
@@ -166,7 +166,7 @@
 }
 .rack a {
   text-decoration: none;
-  color: gold;
+  color: white;
 }
 .rack a:hover {
   text-decoration: underline;
