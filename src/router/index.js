@@ -16,12 +16,12 @@ const routes = [
     component: () => import(/* webpackChunkName: "resume" */ '../views/Resume-View.vue')
   },
   {
-    path: '/Data-Viz_ApexCharts',
-    name: 'Data-Viz_Apexcharts',
+    path: '/Data_visualization',
+    name: 'Data_visualization',
     // route level code-splitting
     // this generates a separate chunk (services.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "DataViz" */ '../views/Data-Viz_Apexcharts.vue')
+    component: () => import(/* webpackChunkName: "DataViz" */ '../views/Data_visualization.vue')
   },
   {
     path: '/My_version_of_RSE.rw',

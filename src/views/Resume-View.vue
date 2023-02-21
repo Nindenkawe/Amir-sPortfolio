@@ -3,7 +3,7 @@
   <aside class="float-none" aria-hidden="true" fill="currentColor" text-2xl md:text-2xl container mx-auto p-4 dark:bg-gray-800 dark:border-gray-700>
     <rackserver/>
   </aside>
-  <main>
+  <main class="p-20">
     <section class="my-0 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
     <div class="text-2xl md:text-2xl container mx-auto p-4 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-gray-400 border-gray-200 rounded-lg shadow-md">
       <img class="w-10 h-10 rounded" src="../assets/bitme/mario.png" alt="Default avatar"/>

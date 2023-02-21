@@ -13,12 +13,12 @@
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='#'><b>ESP8266/HCSR04_data_reader</b></a>
+      <a href='#'><b>ESP8266/HCSR04_reader</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <router-link to="/Data-Viz_ApexCharts"><b>RW_SYB key_info</b></router-link>
+      <router-link to="/Data_visualization"><b>RW_SYB key_info</b></router-link>
       <div class='light'></div>
       <div class='light'></div>
     </li>

@@ -1,56 +1,51 @@
 <template>
-  <Logo />
+<Logo />
 <div class="grid grid-cols-3">
   <div class="col-span-2">
     <div data-bs-spy="scroll" data-bs-target="#scrollspy1" data-bs-offset="200" class="scrollspy-example">
-      <section id="example-1">
-        <h3 class="text-xl font-semibold pt-5 pb-3">Section 1</h3>
+      <section id="Generalstats-1">
+        <h3 class="text-xl font-semibold pt-5 pb-3">General Statistics</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
           minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
           quisquam obcaecati et reiciendis quaerat accusamus numquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+          quisquam obcaecati et reiciendis quaerat accusamus numquam.
+        </p>
+      </section>
+      <section id="C/Price-2">
+        <h3 class="text-xl font-semibold pt-5 pb-3">Consumer price index by Region </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+          quisquam obcaecati et reiciendis quaerat accusamus numquam.
+        </p>
+        <p>
+          <apexchart width="500" type="line" :options="options" :series="series"></apexchart>
+        </p>
+      </section>
+      <section id="Markets-3">
+        <h3 class="text-xl font-semibold pt-5 pb-3">Market statistics(IPO)</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
+          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
+          quisquam obcaecati et reiciendis quaerat accusamus numquam.
+        </p>
+        <p>
           <apexchart 
             id="RRA"
             width="500"
-            type="bar"
+            type="radar"
             :options="RRA"
             :series="series"
             >
           </apexchart>
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-          quisquam obcaecati et reiciendis quaerat accusamus numquam.
-        </p>
-      </section>
-      <section id="example-2">
-        <h3 class="text-xl font-semibold pt-5 pb-3">Section 2</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-          quisquam obcaecati et reiciendis quaerat accusamus numquam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-          quisquam obcaecati et reiciendis quaerat accusamus numquam.
-        </p>
-      </section>
-      <section id="example-3">
-        <h3 class="text-xl font-semibold pt-5 pb-3">Section 3</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-          quisquam obcaecati et reiciendis quaerat accusamus numquam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-          quisquam obcaecati et reiciendis quaerat accusamus numquam.
-        </p>
         <section id="example-sub-A">
-          <h3 class="text-xl font-semibold pt-5 pb-3">Subsection A</h3>
+          <h3 class="text-xl font-semibold pt-5 pb-3">Best stocks</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
             minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
@@ -63,30 +58,40 @@
           </p>
         </section>
         <section id="example-sub-B">
-          <h3 class="text-xl font-semibold pt-5 pb-3">Subsection B</h3>
+          <h3 class="text-xl font-semibold pt-5 pb-3">All stocks</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
             minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
             quisquam obcaecati et reiciendis quaerat accusamus numquam.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-            minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-            quisquam obcaecati et reiciendis quaerat accusamus numquam.
+            <apexchart 
+            id="RRA"
+            width="500"
+            type="bar"
+            :options="RRA"
+            :series="series"
+            >
+          </apexchart>
           </p>
         </section>
       </section>
-      <section id="example-4">
-        <h3 class="text-xl font-semibold pt-5 pb-3">Section 4</h3>
+      <section id="Mobility-4">
+        <h3 class="text-xl font-semibold pt-5 pb-3">Transport & Traffic</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
           minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
           quisquam obcaecati et reiciendis quaerat accusamus numquam.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-          quisquam obcaecati et reiciendis quaerat accusamus numquam.
+          <apexchart 
+            id="RRA"
+            width="500"
+            type="bar"
+            :options="RRA"
+            :series="series"
+            >
+          </apexchart>
         </p>
       </section>
     </div>
@@ -97,24 +102,24 @@
     <div id="scrollspy1" class="sticky-top pl-3 text-sm">
       <ul class="nav nav-pills menu-sidebar">
         <li class="py-1">
-          <a class="nav-link" href="#example-1">Section 1</a>
+          <a class="nav-link" href="#Generalstats-1">General Statistics</a>
         </li>
         <li class="py-1">
-          <a class="nav-link" href="#example-2">Section 2</a>
+          <a class="nav-link" href="#C/Price-2">Consumer price index by Region</a>
         </li>
         <li class="py-1">
-          <a class="nav-link" href="#example-3">Section 3</a>
+          <a class="nav-link" href="#Markets-3">Market statistics(IPO)</a>
           <ul class="nav flex-column pl-3">
             <li class="py-1">
-              <a class="nav-link" href="#example-sub-A">Subsection A</a>
+              <a class="nav-link" href="#example-sub-A">Best Stocks</a>
             </li>
             <li>
-              <a class="nav-link" href="#example-sub-B">Subsection B</a>
+              <a class="nav-link" href="#example-sub-B">All Stocks</a>
             </li>
           </ul>
         </li>
         <li class="py-1">
-          <a class="nav-link" href="#example-4">Section 4</a>
+          <a class="nav-link" href="#Mobility-4">Transport & Traffic</a>
         </li>
       </ul>
     </div>
@@ -122,17 +127,15 @@
   </div>
 </div>
 
-  <Footer />
 </template>
 <script>
   import Logo from '@/components/Lo-go.vue'
-  import Footer from '@/components/Foo-ter.vue'
   import VueApexCharts from "vue3-apexcharts"
   
   export default {
     name: 'Apex-charts',
     components: {
-      Logo, Footer, apexchart: VueApexCharts
+      Logo, apexchart: VueApexCharts
     },
 
   data: function() {
@@ -218,17 +221,6 @@
 </script>
 
 <style scoped>
-.parent {
-  margin: 1rem;
-  padding: 2rem 2rem;
-  text-align: center;
-}
-.child {
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-}
-
   /* Styles required only for the example above */
   .scrollspy-example {
     position: relative;
