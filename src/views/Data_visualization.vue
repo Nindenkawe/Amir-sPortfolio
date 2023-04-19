@@ -3,7 +3,7 @@
 <div class="grid grid-cols-3 ">
   <div class="col-span-2">
     <div data-bs-spy="scroll" data-bs-target="#scrollspy1" data-bs-offset="200" class="scrollspy-example">
-      <section id="Generalstats-1 p-4">
+      <section id="Generalstats-1">
         <h3 class="text-xl font-semibold pt-5 pb-3">General Statistics</h3>
         <div class="flex p-2 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-gray-400 border-gray-200 rounded-lg">
           <button type="button" class="appearance-none py-4 text-blue-dark border-b border-blue-dark mr-6">
@@ -44,7 +44,7 @@
       </section>
       <section id="Markets-3">
         <h3 class="text-xl font-semibold pt-5 pb-3">Market statistics(IPO)</h3>
-        <p>
+        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
           minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
           quisquam obcaecati et reiciendis quaerat accusamus numquam.

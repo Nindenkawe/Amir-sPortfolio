@@ -4,18 +4,16 @@
     <viz/>
   </main>
   <rackserver/>
- <!--  <Footer1/> -->
 </template>
 
 <script>
   import Logo1 from '@/components/Lo-go.vue'
-  /* import Footer1 from '@/components/Foo-ter.vue' */
   import rackserver from '@/components/Rack-server.vue'
   import viz from '@/views/Data_visualization.vue'
 export default {
     name: 'Home-View',
     components: { 
-      Logo1, /* Footer1 */ rackserver, viz
+      Logo1, rackserver, viz
     }
   
 }

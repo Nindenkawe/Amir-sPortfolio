@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="font-sans bg-grey-lighter flex flex-col min-h-screen">
         <div>
           <div class="bg-blue-dark">
@@ -257,3 +257,4 @@
 <script>
 </script>
 
+ -->

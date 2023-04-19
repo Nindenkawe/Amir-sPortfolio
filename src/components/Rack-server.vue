@@ -8,27 +8,27 @@
   <div class='foot'></div>
   <ul class='rack'>
     <li class='medium'>
-      <a href='#'><b>MyPortfolio Web-app</b></a>
+      <a href='#'><b>EA Trade & Commerce</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <a href='#'><b>ESP8266/HCSR04_reader</b></a>
+      <a href='#'><b>Insurance Data</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <router-link to="/Data_visualization"><b>RW_SYB key_info</b></router-link>
+      <router-link to="#"><b>Transport & Traffic</b></router-link>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='medium'>
-      <router-link to="/My_version_of_RSE.rw"><b>My version of RSE.rw</b></router-link>
+      <router-link to="#"><b>Finance Data</b></router-link>
       <div class='light'></div>
       <div class='light'></div>
     </li>
     <li class='large'>
-      <a href='#'><b>Pharmacy.rw</b></a>
+      <a href='#'><b>Health Data</b></a>
       <div class='light'></div>
       <div class='light'></div>
     </li>
@@ -79,7 +79,7 @@
   width: 250px;
   height: 525px;
   bottom: 0;
-  right: 10%;
+  right: 7%;
   border-radius: 2px;
   border: 8px solid #151515;
   background-color: #151515;
