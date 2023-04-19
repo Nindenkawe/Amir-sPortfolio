@@ -3,19 +3,19 @@
   <main class="p-5">
     <viz/>
   </main>
-  <info_contact/>
+  <rackserver/>
  <!--  <Footer1/> -->
 </template>
 
 <script>
   import Logo1 from '@/components/Lo-go.vue'
   /* import Footer1 from '@/components/Foo-ter.vue' */
-  import info_contact from '@/components/Info-contactMe.vue'
+  import rackserver from '@/components/Rack-server.vue'
   import viz from '@/views/Data_visualization.vue'
 export default {
     name: 'Home-View',
     components: { 
-      Logo1, /* Footer1 */ info_contact, viz
+      Logo1, /* Footer1 */ rackserver, viz
     }
   
 }
@@ -27,8 +27,8 @@ export default {
 body {
   height: 300px;
   display: block;
-  background-color: rgb(5, 148, 60);
-  /* background-image: url("@/assets/bitme/cool-background.png"); */
+  background-color: rgb(166, 159, 184);
+  /* background-image: url("@/assets/bitme/ideas.png"); */
   font-family: 'Space Mono', monospace;
 }
 </style>

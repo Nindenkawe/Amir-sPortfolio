@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
    <section class="my-5 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
      <div class="text-2xl md:text-2xl container mx-auto p-4 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-gray-400 border-gray-200 rounded-lg shadow-md">
        <div class="float-none" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
@@ -44,4 +44,54 @@
  
    }
    }
- </script>
+ </script> -->
+ 
+ <!-- <template>
+  <div class="row">
+      <div class="col-md-12">
+          <h3>Cat Facts</h3>
+      </div>
+      <div class="col-md-12">
+          <ul class="list-group">
+              <li v-for="(fact, index) in catFacts" :key="index" class="list-group-item">{{index + 1}}. {{fact.text}}</li>
+          </ul>
+      </div>
+      <div class="row mt-3">
+          <div class="col-md-12 text-center">
+              <button @click="loadMoreFacts" class="btn btn-md btn-primary">{{ fetchingFacts ? '...' : 'Load more' }}</button>
+          </div>
+      </div>
+  </div>
+</template>
+<script lang="ts">
+  import { defineComponent } from 'vue'
+  import axios from 'axios'
+  interface AnimalFacts {
+      text: string
+  }
+  export default defineComponent({
+      name: 'AnimalFacts',
+      data() {
+          return {
+              catFacts: [] as AnimalFacts[],
+              fetchingFacts: false
+          }
+      },
+      methods: {
+          async fetchCatFacts() {
+              const catFactsResponse = await axios.get<AnimalFacts[]>('https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=5')
+              this.catFacts = catFactsResponse.data
+          },
+          async loadMoreFacts() {
+              this.fetchingFacts = true
+              const catFactsResponse = await axios.get<AnimalFacts[]>('https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=5')
+              this.catFacts.push(...(catFactsResponse.data || []))
+
+              this.fetchingFacts = false
+          }
+      },
+      async mounted() {
+          await this.fetchCatFacts()
+      }
+  })
+</script> -->

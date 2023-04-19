@@ -75,16 +75,17 @@
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
 .housing {
   margin: 20px auto;
-  position: absolute;
+  position: fixed;
   width: 250px;
   height: 525px;
-  top: 65px;
-  left: 5px;
+  bottom: 0;
+  right: 10%;
   border-radius: 2px;
   border: 8px solid #151515;
   background-color: #151515;
   box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.2);
 }
+
 
 /* .door {
   position: absolute;
