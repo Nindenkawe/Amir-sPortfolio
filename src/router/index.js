@@ -10,26 +10,17 @@ const routes = [
   {
     path: '/Resume',
     name: 'Resume-View',
-    // route level code-splitting
-    // this generates a separate chunk (services.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "resume" */ '../views/Resume-View.vue')
+    component: () => import('../views/Resume-View.vue')
   },
   {
     path: '/Data_visualization',
     name: 'Data_visualization',
-    // route level code-splitting
-    // this generates a separate chunk (services.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "DataViz" */ '../views/Data_visualization.vue')
+    component: () => import('../views/Data_visualization.vue')
   },
   {
     path: '/My_version_of_RSE.rw',
     name: 'My_version_of_RSE.rw',
-    // route level code-splitting
-    // this generates a separate chunk (services.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "DataViz" */ '../views/RSE_rw.vue')
+    component: () => import('../views/RSE_rw.vue')
   }
 ]
 const router = createRouter({

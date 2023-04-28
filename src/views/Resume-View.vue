@@ -1,6 +1,6 @@
 <template>
+  <Logo />
   <div class="container mx-auto p-20">
-    <Logo />
     <div class="flex flex-col md:flex-row md:space-x-4 md:items-center">
       <div class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
         <div class="flex justify-center items-center">
@@ -41,7 +41,7 @@
                 <div class="text-left">
                   <div class="text-base font-semibold">Google Data Analytics Professional Certificate</div>
                   <div class="text-sm">Issued by: Grow with Google</div>
-                  <div class="text-sm">Issued on: Working on it</div>
+                  <div class="text-sm">Issued on: Still learning</div>
                 </div>
               </div>
             </a>
@@ -50,17 +50,19 @@
       </div>
     </div>
   </div>
+  <rackserver/>
   <Footer/>
 </template>
 
 <script>
   import Logo from '@/components/Lo-go.vue'
+  import rackserver from '@/components/Rack-server.vue'
   import Footer from '@/components/Foo-ter.vue'
 
   export default {
     name: 'ResumeView',
     components: {
-      Logo,Footer
+      Logo,Footer,rackserver
     },
   }
 </script>

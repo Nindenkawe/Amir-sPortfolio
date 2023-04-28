@@ -1,10 +1,9 @@
 <template>
-<Logo />
 <div class="grid grid-cols-3 ">
   <div class="col-span-2">
     <div data-bs-spy="scroll" data-bs-target="#scrollspy1" data-bs-offset="200" class="scrollspy-example">
       <section id="Generalstats-1">
-        <h3 class="text-xl font-semibold pt-5 pb-3">General Statistics</h3>
+        <h3 class="text-xl dark:text-white font-semibold pt-5 pb-3">RW General Statistics</h3>
         <div class="flex p-2 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-gray-400 border-gray-200 rounded-lg">
           <button type="button" class="appearance-none py-4 text-blue-dark border-b border-blue-dark mr-6">
             Gross Domestic Product &middot; 2,709
@@ -21,111 +20,96 @@
         </div>
         <br>
         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-          quisquam obcaecati et reiciendis quaerat accusamus numquam.
+          Rwanda's population is 13,246,394 people as of August 2022, with an annual growth rate of 2.3% from 2012 to 2022. 
+          Females make up 51.5% and males 48.5% of the population. Life expectancy at birth is 69.6 years, up from 51.2 years in 2002 
+          and 64.5 years in 2012.
         </p>
         <br>
+<!--         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
+           add viz
+        </p> -->
+      </section>
+      <section id="price index by Region">
+        <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Consumer price index by Region </h3>
         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          <apexchart type="bar" height="350" :options="chartOptions" :series="series1"></apexchart>
+          Rwanda's inflation measured by the CPI rose 19.3% YoY in Mar 2023 (down from 20.8% in Feb 2023).
+          Food prices increased 41.3% YoY and 4.3% MoM, while alcoholic beverages, tobacco, 
+          and narcotics increased 23.6% YoY and 0.7% MoM. Local products rose 20.8% YoY and 2.2% MoM, 
+          while imported products rose 14.8% YoY and 0.6% MoM. Transport increased 12% YoY and was stable MoM.
+          <General_CPI/>
+          <b>Source:NISR</b>
         </p>
       </section>
-      <section id="Price-2">
-        <h3 class="text-xl font-semibold pt-5 pb-3">Consumer price index by Region </h3>
+      <section id="Market statistics(IPO)">
+        <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Market statistics(IPO)</h3>
         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-          quisquam obcaecati et reiciendis quaerat accusamus numquam.
+          The Rwanda Stock Exchange (RSE) had five listed companies with a total market capitalization of $4 billion as of September 2021.
+          Despite the pandemic, the RSE All Share Index had increased by 12% since the beginning of the year. The RSE is working to attract more listings and investors, 
+          with initiatives such as an alternative market for smaller companies and a mobile trading platform.
         </p>
         <br>
-        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          <apexchart type="area" height="340" :options="chartOptions" :series="series1"></apexchart>
-        </p>
-      </section>
-      <section id="Markets-3">
-        <h3 class="text-xl font-semibold pt-5 pb-3">Market statistics(IPO)</h3>
-        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-          quisquam obcaecati et reiciendis quaerat accusamus numquam.
-        </p>
-        <br>
-        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          <apexchart 
-            id="RRA"
-            width="500"
-            type="radar"
-            :options="RRA"
-            :series="series"
-            >
-          </apexchart>
-        </p>
-        <section id="Markets-A">
-          <h3 class="text-xl font-semibold pt-5 pb-3">Best stocks</h3>
+<!--         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
+        
+        </p> -->
+        <section id="All Stocks">
+          <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">All stocks</h3>
           <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-            minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-            quisquam obcaecati et reiciendis quaerat accusamus numquam.
           </p>
           <br>
           <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-            minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-            quisquam obcaecati et reiciendis quaerat accusamus numquam.
+      
+            
           </p>
         </section>
-        <section id="Markets-B">
-          <h3 class="text-xl font-semibold pt-5 pb-3">All stocks</h3>
+        <section id="Performing Stocks">
+          <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Performing Stocks</h3>
           <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-            minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-            quisquam obcaecati et reiciendis quaerat accusamus numquam.
+        
+            
           </p>
           <br>
           <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-            <apexchart 
-            id="RRA"
-            width="500"
-            type="bar"
-            :options="RRA"
-            :series="series"
-            >
-          </apexchart>
+          <IPO_Data/>
           </p>
         </section>
       </section>
       <section id="Mobility-4">
-        <h3 class="text-xl font-semibold pt-5 pb-3">Transport & Traffic</h3>
+        <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Transport & Traffic</h3>
         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum natus vel
-          minima quod error maxime, molestias ut. Fuga dignissimos nisi nemo necessitatibus
-          quisquam obcaecati et reiciendis quaerat accusamus numquam.
+          The bar chart below presents data on the number of cars and vehicle inspections between 2017-2021, sourced from RRA and RNP. 
+          It's worth noting the difference in the number of cars, number of cars inspected, and number of inspections conducted. 
+          One possible explanation for this difference is the import of old second-hand vehicles, but other factors may also be at play.
+          <Cars_Inspections />
+          <b>Source:NISR</b>
         </p>
         <br>
         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          <apexchart type="bar" height="340" :options="chartOptions" :series="series1"></apexchart>
+          According to the RNP's source data for the statistical year book of 2022, road accidents caused a death rate of 4.7 in 2021.
+          To provide a better understanding of the types of accidents that occurred, we have prepared a visual representation of the data categorised by accident type.
+          <BarChart/>
+          <b>Source:NISR</b>
         </p>
       </section>
     </div>
   </div>
 
   <div>
-    <div id="scrollspy1" class="sticky-top pl-3 text-sm">
+    <div id="scrollspy1" class="sticky-top pl-3 dark:text-white text-sm">
       <ul class="nav nav-pills menu-sidebar">
         <li class="py-1">
           <a class="nav-link" href="#Generalstats-1">General Statistics</a>
         </li>
         <li class="py-1">
-          <a class="nav-link" href="#Price-2">Consumer price index by Region</a>
+          <a class="nav-link" href="#price index by Region">Consumer price index by Region</a>
         </li>
         <li class="py-1">
-          <a class="nav-link" href="#Markets-3">Market statistics(IPO)</a>
+          <a class="nav-link" href="#Market statistics(IPO)">Market statistics(IPO)</a>
           <ul class="nav flex-column pl-3">
             <li class="py-1">
-              <a class="nav-link" href="#Markets-A">Best Stocks</a>
+              <a class="nav-link" href="#All Stocks">All Stocks</a>
             </li>
             <li>
-              <a class="nav-link" href="#Markets-B">All Stocks</a>
+              <a class="nav-link" href="#Performing Stocks">Performing Stocks</a>
             </li>
           </ul>
         </li>
@@ -139,122 +123,15 @@
 
 </template>
 <script>
-  import Logo from '@/components/Lo-go.vue'
-  import VueApexCharts from "vue3-apexcharts"
+  import Cars_Inspections from '@/components/Cars_Inspections.vue'
+  import BarChart from '@/components/accident_data.vue'
+  import General_CPI from '@/components/CPI_Data.vue'
+  import IPO_Data from '@/components/IPO_data.vue'
   
-  export default {
- 
+  export default{
     components: {
-      Logo, apexchart: VueApexCharts
-    },
-
-  data: function() {
-    return {
-      info: null,
-      RRA: {
-        chart: {
-          height: 350
-        },
-        plotOptions: {
-          bar: {
-            horizontal: false,
-            columnWidth: '55%',
-            endingShape: 'rounded'
-          },
-        },
-        dataLabels: {
-          enabled: false
-        },
-        stroke: {
-          show: true,
-          width: 2,
-          colors: ['transparent']
-        },
-        xaxis: {
-          categories: ['NV', 'MI', 'RA', 'CPI', 'GDP', 'LEB', '', '...', '...'],
-        },
-        yaxis: {
-          title: {
-            text: 'Source:(RRA & RNP)'
-          }
-        },
-        fill: {
-          opacity: 1
-        },
-        tooltip: {
-          y: {
-            formatter: function (val) {
-              return val + "Thousands"
-            }
-          }
-        }
-        
-      },
-      series: [{
-        name: '2018',
-        data: [216204, 145835, 5611, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
-      }, {
-        name: '2020',
-        data: [244112, 0, 4203, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
-      }, {
-        name: '2022',
-        data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
-      }],
-      series1: [{
-            name: 'Sales',
-            data: [216204, 217301,244112 ]
-          }
-        ],
-          chartOptions: {
-            chart: {
-              height: 350
-            },
-            forecastDataPoints: {
-              count: 7
-            },
-            stroke: {
-              width: 3,
-              curve: 'smooth'
-            },
-            xaxis: {
-              type: 'datetime',
-              categories: ['12/31/2018', '12/31/2019','12/31/2020'],
-              tickAmount: 10,
-              labels: {
-                formatter: function(value, timestamp, opts) {
-                  return opts.dateFormatter(new Date(timestamp), 'dd MMM')
-                }
-              }
-            },
-            title: {
-              text: 'Source:NISR',
-              align: 'left',
-              style: {
-                fontSize: "16px",
-                color: '#666'
-              }
-            },
-            fill: {
-              type: 'gradient',
-              gradient: {
-                shade: 'dark',
-                gradientToColors: [ '#FDD835'],
-                shadeIntensity: 1,
-                type: 'horizontal',
-                opacityFrom: 1,
-                opacityTo: 1,
-                stops: [0, 100, 100, 100]
-              },
-            },
-            yaxis: {
-              min: 0,
-              max: 250000
-            }
-          },
+      Cars_Inspections, BarChart, General_CPI, IPO_Data
     }
-
-  }
-
     
   }
 </script>

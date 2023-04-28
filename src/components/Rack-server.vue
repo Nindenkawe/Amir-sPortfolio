@@ -79,7 +79,7 @@
   width: 250px;
   height: 525px;
   bottom: 0;
-  right: 7%;
+  right: 5%;
   border-radius: 2px;
   border: 8px solid #151515;
   background-color: #151515;

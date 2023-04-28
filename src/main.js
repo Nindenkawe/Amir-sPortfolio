@@ -2,13 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import Vue from 'vue'
-import {ApexCharts, Vue3ApexCharts} from 'vue3-apexcharts'
-/* import axios from 'axios'
-
-app.use(axios, {
-  baseUrl: 'https://www.statistics.gov.rw/',
-}) */
-/* working on adding firebase*/
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -32,6 +25,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-createApp(App).use(router, ApexCharts, Vue3ApexCharts, analytics).mount('#app')
+createApp(App).use(router, analytics).mount('#app')
 
 Vue.config.productionTip = false

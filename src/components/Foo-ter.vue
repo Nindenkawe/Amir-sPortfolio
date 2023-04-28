@@ -109,13 +109,13 @@ ul li:hover span:nth-child(2){
   opacity: .2;
 }
 ul li:nth-child(1):hover span{
-  background: #04286b !important;
+  background: #0A66C2 !important;
 }
 ul li:nth-child(2):hover span{
-  background: #032910 !important;
+  background: #1da1f2 !important;
 }
 ul li:nth-child(3):hover span{
-  background: #5f0924 !important;
+  background: #171515 !important;
 }
 ul li:nth-child(4):hover span{
   background: #353204 !important;
