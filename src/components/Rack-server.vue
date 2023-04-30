@@ -61,7 +61,7 @@
 </div>
 </div>
 </template>
-<script>
+<!-- <script>
   export default{
     mounted() {
     let rackfunc = document.createElement('rackfunc')
@@ -69,7 +69,7 @@
     document.head.appendChild(rackfunc)
   },
   }
-</script>
+</script> -->
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);

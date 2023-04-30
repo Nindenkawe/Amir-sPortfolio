@@ -27,17 +27,17 @@
     </div>
     <viz/>
   </main>
-  <rackserver/>
+  <!-- <rackserver/> -->
 </template>
 
 <script>
   import Logo from '@/components/Lo-go.vue'
-  import rackserver from '@/components/Rack-server.vue'
+  /* import rackserver from '@/components/Rack-server.vue' */
   import viz from '@/views/Data_visualization.vue'
 export default {
     name: 'Home-View',
     components: { 
-      Logo, rackserver, viz
+      Logo, /* rackserver */ viz
     },
     data() {
       return {
