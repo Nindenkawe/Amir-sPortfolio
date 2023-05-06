@@ -1,4 +1,4 @@
-<template>
+<template v-if="!isMobile">
   <Logo />
   <main class="p-2">
     <div class="flex justify-center items-center">
@@ -27,24 +27,24 @@
     </div>
     <viz/>
   </main>
-  <!-- <rackserver/> -->
+  <rackserver/>
 </template>
 
 <script>
   import Logo from '@/components/Lo-go.vue'
-  /* import rackserver from '@/components/Rack-server.vue' */
+  import rackserver from '@/components/Rack-server.vue'
   import viz from '@/views/Data_visualization.vue'
 export default {
     name: 'Home-View',
     components: { 
-      Logo, /* rackserver */ viz
+      Logo, rackserver, viz
     },
     data() {
       return {
         greeting: "Hi am Nindenkawe Amir, Welcome to my portfolio web-app.",
         msg: "This page serves as a platform to showcase my expertise as a web developer, data analyst, and data visualization enthusiast. As a developer, I possess the necessary skills and knowledge to create dynamic and responsive web pages that cater to the needs of clients. Moreover, my proficiency in data analysis allows me to derive meaningful insights from complex datasets. Finally, my passion for data visualization enables me to present the findings in a clear and concise manner, making it easier for clients to understand and act on the information."
       };
-    }
+    },
   
 }
 </script>

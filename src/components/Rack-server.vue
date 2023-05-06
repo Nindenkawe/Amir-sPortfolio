@@ -1,9 +1,6 @@
 <template>
 <div class="w-60 h-auto shadow-md bg-white px-1 absolute">
 <div class='housing'>
-<!--   <div class='door'>
-    <div class='handle'></div>
-  </div> -->
   <div class='foot'></div>
   <div class='foot'></div>
   <ul class='rack'>
@@ -52,32 +49,30 @@
 <!--       <div class='light'></div>
       <div class='light'></div> -->
     </li>
-    <li class='large'>
+<!--     <li class='large'>
       <a href='#'>...</a>
-<!--       <div class='light'></div>
-      <div class='light'></div> -->
-    </li>
+      <div class='light'></div>
+      <div class='light'></div>
+    </li> -->
   </ul>
 </div>
 </div>
 </template>
-<!-- <script>
-  export default{
-    mounted() {
-    let rackfunc = document.createElement('rackfunc')
-    rackfunc.setAttribute('src', '../rackfunc.js')
-    document.head.appendChild(rackfunc)
-  },
-  }
-</script> -->
 
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@media (max-width: 600px) {
+  /* Set the width to 100% for mobile screens */
+  .housing {
+    width: 100%;
+    right: 0;
+  }
+}
 .housing {
   margin: 20px auto;
   position: fixed;
   width: 250px;
-  height: 525px;
+  height: 425px;
   bottom: 0;
   right: 5%;
   border-radius: 2px;
@@ -86,60 +81,16 @@
   box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.2);
 }
 
-
-/* .door {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
-  border-style: solid;
-  border-color: #191919;
-  border-width: 3px 12px;
-  background-color: rgba(230, 230, 230, 0.1);
-  z-index: 50;
-  -webkit-transform-origin: right;
-  -moz-transform-origin: right;
-  -ms-transform-origin: right;
-  -o-transform-origin: right;
-  transform-origin: right;
-  -webkit-transition: all 1.2s ease-in-out;
-  -moz-transition: all 1.2s ease-in-out;
-  transition: all 1.2s ease-in-out;
+@media (max-width: 600px) {
+  .housing {
+    position: static;
+    width: 100%;
+    border: none;
+    margin: 0;
+    height: auto;
+    box-shadow: none;
+  }
 }
-.door.open {
-  -webkit-transform: rotateY(135deg) skew(0, -10deg);
-  -moz-transform: rotateY(135deg) skew(0, -10deg);
-  -ms-transform: rotateY(135deg) skew(0, -10deg);
-  -o-transform: rotateY(135deg) skew(0, -10deg);
-  transform: rotateY(135deg) skew(0, -10deg);
-}
-.door .handle {
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -10px;
-  width: 6px;
-  height: 63px;
-  border-radius: 2px;
-  background-color: #888;
-  box-shadow: 0 0 4px 1px rgba(40, 40, 40, 0.25);
-  cursor: pointer;
-}
-.door .handle:hover {
-  background-color: #bbb;
-}
-.door .handle:active {
-  -webkit-transform: translate(0, 4px);
-  -moz-transform: translate(0, 4px);
-  -ms-transform: translate(0, 4px);
-  -o-transform: translate(0, 4px);
-  transform: translate(0, 4px);
-} */
 
 .foot {
   position: absolute;

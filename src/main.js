@@ -2,6 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import Vue from 'vue'
+import VueBrowserDetect from 'vue-browser-detect-plugin'
+import VueApexCharts from 'vue3-apexcharts'
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -25,6 +27,18 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-createApp(App).use(router, analytics).mount('#app')
+createApp(App).use(router, analytics, VueBrowserDetect, VueApexCharts).mount('#app')
 
 Vue.config.productionTip = false
+Vue.component('apex-chart', VueApexCharts)
+
+
+new Vue({
+  render: h => {
+    if (Vue.prototype.$browser.isMobile) {
+      return h('div', 'This app is not available on mobile devices.')
+    } else {
+      return h(app)
+    }
+  },
+})

@@ -2,11 +2,11 @@
 <div class="grid grid-cols-3 ">
   <div class="col-span-2">
     <div data-bs-spy="scroll" data-bs-target="#scrollspy1" data-bs-offset="200" class="scrollspy-example">
-      <section id="Generalstats-1">
+      <section id="Generalstats">
         <h3 class="text-xl dark:text-white font-semibold pt-5 pb-3">RW General Statistics</h3>
         <div class="flex p-2 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-gray-400 border-gray-200 rounded-lg">
           <button type="button" class="appearance-none py-4 text-blue-dark border-b border-blue-dark mr-6">
-            Gross Domestic Product &middot; 2,709
+            Gross Domestic Product &middot; {{ GDP }}
           </button>
           <button type="button" class="appearance-none py-4 text-grey-dark border-b border-transparent hover:border-grey-dark mr-6">
             Consumer Price Index &middot; 159.8
@@ -37,39 +37,92 @@
           and narcotics increased 23.6% YoY and 0.7% MoM. Local products rose 20.8% YoY and 2.2% MoM, 
           while imported products rose 14.8% YoY and 0.6% MoM. Transport increased 12% YoY and was stable MoM.
           <General_CPI/>
-          <b>Source:NISR</b>
+          <b>Source:NISR 2022</b>
         </p>
       </section>
-      <section id="Market statistics(IPO)">
-        <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Market statistics(IPO)</h3>
-        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          The Rwanda Stock Exchange (RSE) had five listed companies with a total market capitalization of $4 billion as of September 2021.
-          Despite the pandemic, the RSE All Share Index had increased by 12% since the beginning of the year. The RSE is working to attract more listings and investors, 
-          with initiatives such as an alternative market for smaller companies and a mobile trading platform.
+      <section id="Telecommunications">
+        <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Telecommunications</h3>
+        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 shadow-md">
+          During the fourth quarter of 2022, the mobile telephone services were dominated by two operators, namely MTN Rwanda Ltd and Airtel Rwanda Ltd.
+          At the end of December 2022, the total number of active mobile subscriptions reported was 11,002,078 SIM cards. 
+
+          Within the last 90 days, a total of 8,279,430 SIM cards were active and connected to the internet. 
+          In addition, there were 47,857 active fixed internet subscriptions recorded at the end of the 4th quarter of 2022. 
+          The table provided below displays the number of subscriptions per operator.
         </p>
-        <br>
-<!--         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-        
-        </p> -->
-        <section id="All Stocks">
-          <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">All stocks</h3>
+          <table class="table-auto w-full flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 shadow-md">
+            <thead>
+              <tr>
+                <th class="px-4 py-2"></th>
+                <th class="px-4 py-2">December 2021</th>
+                <th class="px-4 py-2">December 2022</th>
+                <th class="px-4 py-2">Quarterly Variation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200">
+                <td class="px-4 py-2 font-medium">MTN Rwanda Ltd</td>
+                <td class="px-4 py-2">6,954,523</td>
+                <td class="px-4 py-2">7,088,906</td>
+                <td class="px-4 py-2"><b>1.93%</b></td>
+              </tr>
+              <tr class="border-b border-gray-200">
+                <td class="px-4 py-2 font-medium">Airtel Rwanda Ltd</td>
+                <td class="px-4 py-2">3,948,466</td>
+                <td class="px-4 py-2">3,913,172</td>
+                <td class="px-4 py-2">0.89%</td>
+              </tr>
+              <tr class="border-b border-gray-200">
+                <td class="px-4 py-2 font-medium">Total</td>
+                <td class="px-4 py-2">10,902,989</td>
+                <td class="px-4 py-2">11,002,078</td>
+                <td class="px-4 py-2">0.91%</td>
+              </tr>
+            </tbody>
+          </table>
+        <section id="Top Players">
+          <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Top Players</h3>
           <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          </p>
-          <br>
-          <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-      
-            
+              Based on the RURA report of 2022, we can summarize the market share of on-net and off-net minutes for MTN Rwanda Ltd and Airtel Rwanda Ltd as follows:
+              <ul class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
+                <li class="text-lg font-bold">
+                  On-net minutes market share: <br>
+                  - MTN Rwanda Ltd: 77% <br>
+                  - Airtel Rwanda Ltd: 23%
+                </li>
+                <li class="text-lg font-bold">
+                  Off-net minutes market share: <br>
+                  - MTN Rwanda Ltd: 39% <br>
+                  - Airtel Rwanda Ltd: 61%
+                </li>
+                <li class="text-lg font-bold">
+                  International minutes market share: <br>
+                  - MTN Rwanda Ltd: 76% <br>
+                  - Airtel Rwanda Ltd: 24%
+                </li>
+              </ul>
+
+                  
+              These percentages represent the proportion of total minutes generated by each mobile network operator within their respective categories.
+
+              It's important to note that these market shares are specific to the fourth quarter of 2022 and may change over time based on various factors such as network quality, pricing, promotions, and customer preferences.
+          <Telecom_Data/>
+          <b>Source:RURA 2022</b>
+
           </p>
         </section>
-        <section id="Performing Stocks">
-          <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Performing Stocks</h3>
+        <section id="Internet">
+          <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Internet</h3>
           <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-        
-            
+            In Q4 2022, the country had a total international internet bandwidth capacity of 187,954 Mbps, out of which the average utilized bandwidth was 108,273 Mbps.
+            <Band_width />  
+            <b>Source:RURA 2022</b>          
           </p>
           <br>
           <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          <IPO_Data/>
+            By December 2022, there was a 49.6% increase in fixed internet subscriptions as compared to Q4 2021. Of the total fixed internet subscriptions, 99.8% were subscribed to speeds equal to or greater than 256 kbps, while only 0.2% were subscribed to speeds below 256 kbps.
+            <Internet_Distubution/>
+            <b>Source:RURA 2022</b>
           </p>
         </section>
       </section>
@@ -80,14 +133,14 @@
           It's worth noting the difference in the number of cars, number of cars inspected, and number of inspections conducted. 
           One possible explanation for this difference is the import of old second-hand vehicles, but other factors may also be at play.
           <Cars_Inspections />
-          <b>Source:NISR</b>
+          <b>Source:NISR 2022</b>
         </p>
         <br>
         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-          According to the RNP's source data for the statistical year book of 2022, road accidents caused a death rate of 4.7 in 2021.
+          According to RNP's source data from the statistical year book of 2022, road accidents caused a death rate of 4.7 in 2021.
           To provide a better understanding of the types of accidents that occurred, we have prepared a visual representation of the data categorised by accident type.
           <BarChart/>
-          <b>Source:NISR</b>
+          <b>Source:NISR 2022</b>
         </p>
       </section>
     </div>
@@ -97,19 +150,19 @@
     <div id="scrollspy1" class="sticky-top pl-3 dark:text-white text-sm">
       <ul class="nav nav-pills menu-sidebar">
         <li class="py-1">
-          <a class="nav-link" href="#Generalstats-1">General Statistics</a>
+          <a class="nav-link" href="#Generalstats">General Statistics</a>
         </li>
         <li class="py-1">
           <a class="nav-link" href="#price index by Region">Consumer price index by Region</a>
         </li>
         <li class="py-1">
-          <a class="nav-link" href="#Market statistics(IPO)">Market statistics(IPO)</a>
+          <a class="nav-link" href="#Telecommunications">Telecommunications</a>
           <ul class="nav flex-column pl-3">
             <li class="py-1">
-              <a class="nav-link" href="#All Stocks">All Stocks</a>
+              <a class="nav-link" href="#Top Players">Top Players</a>
             </li>
             <li>
-              <a class="nav-link" href="#Performing Stocks">Performing Stocks</a>
+              <a class="nav-link" href="#Internet">Internet</a>
             </li>
           </ul>
         </li>
@@ -122,25 +175,45 @@
 </div>
 
 </template>
-<script>
+<script lang="js">
   import Cars_Inspections from '@/components/Cars_Inspections.vue'
   import BarChart from '@/components/accident_data.vue'
   import General_CPI from '@/components/CPI_Data.vue'
-  import IPO_Data from '@/components/IPO_data.vue'
+  import Telecom_Data from '@/components/Telecom_data.vue'
+  import Internet_Distubution from '@/components/Internet_Distubution.vue'
+  import Band_width from '@/components/band_width.vue'
+  import axios from 'axios'
+  import cheerio from 'cheerio'
   
   export default{
     components: {
-      Cars_Inspections, BarChart, General_CPI, IPO_Data
+      Cars_Inspections, BarChart, General_CPI, Telecom_Data, Internet_Distubution, Band_width
+    },
+    data(){
+      return{
+        GDP:''
+      }
+    },
+    mounted() {
+      axios.get('https://www.statistics.gov.rw/')
+        .then(response => {
+          const html = response.data
+          const $ = cheerio.load(html)
+          const GDP = $('div.col-md-4 > div.figure-value > h1').text()
+          this.GDP = GDP;
+        })
+        .catch(error => {
+          console.log(error)
+        })
     }
-    
-  }
+}
 </script>
 
 <style scoped>
   /* Styles required only for the example above */
   .scrollspy-example {
     position: relative;
-    height: 600px;
+    height: 800px;
     overflow: auto;
   }
 </style>
