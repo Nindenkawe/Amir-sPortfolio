@@ -1,5 +1,5 @@
 <template>
-    <div id="chart">
+    <div id="chart" class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-black-400 rounded-lg shadow-md">
        <apexchart type="rangeBar" height="390" :options="chartOptions" :series="series"></apexchart>
     </div>
 </template>
@@ -45,7 +45,7 @@
                 enabled: false
               }
             },
-            colors: ['#FFA500', '#00FF00'],
+            colors: ['#FFA500', '#8b0000'],
             plotOptions: {
               bar: {
                 horizontal: true,
@@ -66,8 +66,8 @@
             fill: {
               type: 'gradient',
               gradient: {
-                gradientToColors: ['#36BDCB'],
-                inverseColors: false,
+                gradientToColors: ['#8b0000'],
+                inverseColors: true,
                 stops: [0, 100]
               }
             },
