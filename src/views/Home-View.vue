@@ -55,8 +55,6 @@ body {
   height: 300px;
   display: block;
   background-color: rgb(10, 2, 31);
-  /* background-image: url("@/assets/bitme/ideas.png"); */
-  font-family: 'Space Mono', monospace;
 }
 @media screen and (max-width: 768px) {
   #app {
