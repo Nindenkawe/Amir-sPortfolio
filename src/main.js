@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import Vue from 'vue'
-/* import VueBrowserDetect from 'vue-browser-detect-plugin' */
+import VueBrowserDetectPlugin from 'vue-browser-detect-plugin'
 import VueApexCharts from 'vue3-apexcharts'
 import './index.css'
 
@@ -28,17 +28,16 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-createApp(App).use(router, analytics, VueApexCharts).mount('#app')
+createApp(App).use(router, analytics, VueBrowserDetectPlugin, VueApexCharts).mount('#app')
 
 Vue.component('apex-chart', VueApexCharts)
 
 
-/* Vue({
-  render: h => {
-    if (Vue.prototype.$browser.isMobile) {
-      return h('div', 'This app is not available on mobile devices.')
-    } else {
-      return h(app)
-    }
-  },
-}) */
+const device = this.$browserDetect.deviceType;
+
+if (device === 'mobile') {
+  // Redirect the user to a mobile-friendly version of your app or show an error message
+  window.location.href = '/mobile-friendly-version';
+} else {
+  // Load your Vue app as usual
+}
