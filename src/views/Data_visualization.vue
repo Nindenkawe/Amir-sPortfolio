@@ -3,27 +3,53 @@
   <div class="col-span-2">
     <div data-bs-spy="scroll" data-bs-target="#scrollspy1" data-bs-offset="200" class="scrollspy-example">
       <section id="Generalstats">
-        <h3 class="text-xl dark:text-white font-semibold pt-5 pb-3">RW General Statistics</h3>
-        <div class="flex p-2 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-black-400 border-gray-200 rounded-lg">
-          <button type="button" class="appearance-none py-4 text-blue-dark border-b border-blue-dark mr-6">
-            Gross Domestic Product &middot; {{ GDP }}
-          </button>
-          <button type="button" class="appearance-none py-4 text-grey-dark border-b border-transparent hover:border-grey-dark mr-6">
-            Consumer Price Index &middot; 159.8
-          </button>
-          <button type="button" class="appearance-none py-4 text-grey-dark border-b border-transparent hover:border-grey-dark">
-            Life Expextancy at Birth &middot; 68.6
-          </button>
-          <button type="button" class="appearance-none py-4 text-grey-dark border-b border-transparent hover:border-grey-dark">
-            Size of the resident population &middot; 13,697,803
-          </button>
-        </div>
+        <h3 class="text-xl dark:text-white font-semibold pt-5 pb-3">🇷🇼 General Statistics</h3>
+          <div class="flex p-2 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-black-400 border-gray-200 rounded-lg">
+            <button type="button"
+                    class="appearance-none py-4 mr-6"
+                    :class="{'text-blue-dark border-b border-blue-dark': activeTab === 'gdp'}"
+                    @click="activeTab = 'gdp'">
+              <span :class="{'font-bold': activeTab === 'gdp'}">Gross Domestic Product</span> &middot; {{ GDP }}
+            </button>
+            <button type="button"
+                    class="appearance-none py-4 mr-6"
+                    :class="{'text-blue-dark border-b border-blue-dark': activeTab === 'cpi'}"
+                    @click="activeTab = 'cpi'">
+              <span :class="{'font-bold': activeTab === 'cpi'}">Consumer Price Index</span> &middot; 159.8
+            </button>
+            <button type="button"
+                    class="appearance-none py-4"
+                    :class="{'text-blue-dark border-b border-blue-dark': activeTab === 'life'}"
+                    @click="activeTab = 'life'">
+              <span :class="{'font-bold': activeTab === 'life'}">Life Expectancy at Birth</span> &middot; 68.6
+            </button>
+                <button type="button"
+                    class="appearance-none py-4"
+                    :class="{'text-blue-dark border-b border-blue-dark': activeTab === 'srp'}"
+                    @click="activeTab = 'srp'">
+              <span :class="{'font-bold': activeTab === 'srp'}">Size of the Resident Population</span> &middot; 13,246,394
+            </button>
+          </div>
         <br>
-        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-black-400 rounded-lg shadow-md">
+        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-black-400 rounded-lg shadow-md" v-show="activeTab === 'srp' || activeTab === 'srp'">
           Rwanda's population is 13,246,394 people as of August 2022, with an annual growth rate of 2.3% from 2012 to 2022. 
           Females make up 51.5% and males 48.5% of the population. Life expectancy at birth is 69.6 years, up from 51.2 years in 2002 
           and 64.5 years in 2012.
         </p>
+        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-black-400 rounded-lg shadow-md" v-show="activeTab === 'gdp'">
+          In 2022, GDP at current market prices was estimated at Frw 13,716 billion, up from Frw 10.930 billion in 2021. Services sector contributed 47 percent of GDP, Agriculture sector contributed 25 percent of the GDP, and Industry sector contributed 21 percent of GDP while 7 percent was attributed to adjustment for taxes less subsidies on products.
+        </p>
+        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-black-400 rounded-lg shadow-md" v-show="activeTab === 'cpi'">
+          Urban CPI increased by 19.3 percent on annual basis (March 2023 and March 2022) and increased by 1.8 percent on monthly basis (March 2023 to February 2023). The annual average inflation rate between March 2023 and March 2022 was 17.5 percent.
+        </p>
+        <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-black-400 rounded-lg shadow-md" v-show="activeTab === 'life'">
+          The evolution of mortality data shows that the average annual increase in life expectancy at birth
+          during the period 1978-1991 were respectively 0.45 years for men, 0.68 years for females and
+          0.56 years for both sexes, while for the period 1991-2002 the average annual decrease in life
+          expectancy at birth was about 0.23 years for the entire population. Between 2002 and 2012 the
+          average annual increase rate in life expectancy at birth is1.33 years
+        </p>
+
         <br>
 <!--         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-black-400 rounded-lg shadow-md">
            add viz
@@ -124,8 +150,8 @@
           </p>
         </section>
       </section>
-      <section id="Mobility-4">
-        <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Transport & Traffic</h3>
+      <section id="Mobility">
+        <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Transport & Mobility</h3>
         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-black-400 rounded-lg shadow-md">
           The bar chart below presents data on the number of cars and vehicle inspections between 2017-2021, sourced from RRA and RNP. 
           It's worth noting the difference in the number of cars, number of cars inspected, and number of inspections conducted. 
@@ -165,7 +191,7 @@
           </ul>
         </li>
         <li class="py-1">
-          <a class="nav-link" href="#Mobility-4">Transport & Traffic</a>
+          <a class="nav-link" href="#Mobility">Transport & Mobility</a>
         </li>
       </ul>
     </div>
@@ -180,8 +206,8 @@
   import Telecom_Data from '@/components/Telecom_data.vue'
   import Internet_Distubution from '@/components/Internet_Distubution.vue'
   import Band_width from '@/components/band_width.vue'
-  import axios from 'axios'
-  import cheerio from 'cheerio'
+/*   import axios from 'axios'
+  import $ from 'jquery' */
   
   export default{
     components: {
@@ -189,21 +215,18 @@
     },
     data(){
       return{
-        GDP:''
+        activeTab: 'gdp',
+        GDP: ''
       }
     },
-    mounted() {
-      axios.get('https://www.statistics.gov.rw/')
-        .then(response => {
-          const html = response.data
-          const $ = cheerio.load(html)
-          const GDP = $('div.col-md-4 > div.figure-value > h1').text()
-          this.GDP = GDP;
-        })
-        .catch(error => {
-          console.log(error)
-        })
-    }
+    /* mounted() {
+    axios.get('https://www.statistics.gov.rw/')
+      .then(({ data }) => {
+        const GDP = $(data).find('div.col-md-4 > div.figure-value > h1').text();
+        this.GDP = GDP;
+      })
+      .catch(error => console.log(`Error fetching data: ${error}`));
+  } */
 }
 </script>
 

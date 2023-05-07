@@ -72,7 +72,7 @@
   margin: 20px auto;
   position: fixed;
   width: 250px;
-  height: 425px;
+  height: 515px;
   bottom: 0;
   right: 5%;
   border-radius: 2px;

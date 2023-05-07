@@ -4,7 +4,7 @@
           <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Market share</h3>
               <p class="my-4">
-                <apexchart type="pie" width="380" :options="chartOptions" :series="Market_share"></apexchart>
+                <apexchart type="donut" width="380" :options="chartOptions" :series="Market_share"></apexchart>
               </p>
           </blockquote>  
       </figure>
@@ -55,6 +55,7 @@
               type: 'pie',
             },
             labels: ['MTN Rwanda', 'Airtel Rwanda'],
+            colors: ['#FFFF00', '#FF0000'],
             responsive: [{
               breakpoint: 480,
               options: {

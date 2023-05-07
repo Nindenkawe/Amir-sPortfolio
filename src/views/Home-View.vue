@@ -1,4 +1,4 @@
-<template v-if="!isMobile">
+<template>
   <Logo />
   <main class="p-2">
     <div class="flex justify-center items-center">
@@ -55,7 +55,7 @@ export default {
 body {
   height: 300px;
   display: block;
-  background-color: rgb(5, 3, 10);
+  background-color: rgb(10, 2, 31);
   /* background-image: url("@/assets/bitme/ideas.png"); */
   font-family: 'Space Mono', monospace;
 }
