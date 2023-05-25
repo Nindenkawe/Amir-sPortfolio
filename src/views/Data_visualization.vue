@@ -199,7 +199,8 @@
 </div>
 
 </template>
-<script lang="js">
+
+<script>
   import Cars_Inspections from '@/components/Cars_Inspections.vue'
   import BarChart from '@/components/accident_data.vue'
   import General_CPI from '@/components/CPI_Data.vue'

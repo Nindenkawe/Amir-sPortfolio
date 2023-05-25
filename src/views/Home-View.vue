@@ -1,8 +1,8 @@
 <template>
-  <Logo />
-  <main class="p-2">
+  <!-- <Logo /> -->
+  <main class="p-1">
     <div class="flex justify-center items-center">
-      <img class="w-30 h-30 rounded" src="../assets/bitme/mario.png" alt="Default avatar" />
+      <img class="w-30 h-30 rounded" src="../assets/bitme/help.png" alt="Default avatar" />
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16 left-0">
         <div class="flex flex-col justify-center lg:pl-0 lg:pr-8">
           <h1 class="mb-2 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-2xl lg:text-2xl dark:text-white">{{ greeting }}</h1>
@@ -31,13 +31,13 @@
 </template>
 
 <script>
-  import Logo from '@/components/Lo-go.vue'
-  import rackserver from '@/components/Rack-server.vue'
+  /* import Logo from '@/components/Lo-go.vue'
+   */import rackserver from '@/components/Rack-server.vue'
   import viz from '@/views/Data_visualization.vue'
     export default {
       name: 'Home-View',
       components: { 
-        Logo, rackserver, viz
+        /* Logo, */ rackserver, viz
       },
       data() {
         return {
@@ -55,6 +55,7 @@ body {
   height: 300px;
   display: block;
   background-color: rgb(10, 2, 31);
+  font-family: 'Space Mono', monospace;
 }
 @media screen and (max-width: 768px) {
   #app {
