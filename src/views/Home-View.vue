@@ -2,7 +2,7 @@
   <!-- <Logo /> -->
   <main class="p-1">
     <div class="flex justify-center items-center">
-      <img class="w-30 h-30 rounded" src="../assets/bitme/help.png" alt="Default avatar" />
+      <img class="w-30 h-30 rounded" src="../assets/bitme/help.webp" alt="Default avatar" />
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16 left-0">
         <div class="flex flex-col justify-center lg:pl-0 lg:pr-8">
           <h1 class="mb-2 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-2xl lg:text-2xl dark:text-white">{{ greeting }}</h1>
@@ -49,8 +49,6 @@
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 body {
   height: 300px;
   display: block;

@@ -36,13 +36,3 @@ const router = createRouter({
   }
 })
 export default router
-
-
-/*   scrollBehavior(to, from, savedPosition) {
-    if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-      }
-    }
-  } */

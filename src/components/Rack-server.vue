@@ -1,71 +1,69 @@
 <template>
-<div class="w-60 h-auto shadow-md bg-white px-1 absolute">
-<div class='housing'>
-  <div class='foot'></div>
-  <div class='foot'></div>
-  <ul class='rack'>
-    <li class='medium'>
-      <a href='#'><b>EA Trade & Commerce</b></a>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='medium'>
-      <a href='#'><b>Insurance Data</b></a>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='medium'>
-      <router-link to="#"><b>Transport & Traffic</b></router-link>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='medium'>
-      <router-link to="#"><b>Finance Data</b></router-link>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='large'>
-      <a href='#'><b>Health Data</b></a>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='large'>
-      <a href='#'><b>...</b></a>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='large'>
-      <a href='#'><b>...</b></a>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li>
-    <li class='large'>
-      <a href='#'>...</a>
-<!--       <div class='light'></div>
-      <div class='light'></div> -->
-    </li>
-    <li class='large'>
-      <a href='#'>...</a>
-<!--       <div class='light'></div>
-      <div class='light'></div> -->
-    </li>
-<!--     <li class='large'>
-      <a href='#'>...</a>
-      <div class='light'></div>
-      <div class='light'></div>
-    </li> -->
-  </ul>
-</div>
-</div>
+  <div class="w-60 h-auto shadow-md bg-white px-1 absolute">
+    <div class="housing">
+      <div class="foot"></div>
+      <div class="foot"></div>
+      <ul class="rack">
+        <li class="medium">
+          <router-link to="#"><b>EA Trade & Commerce</b></router-link>
+          <div class="light"></div>
+          <div class="light"></div>
+        </li>
+        <li class="medium">
+          <router-link to="#"><b>Insurance Data</b></router-link>
+          <div class="light"></div>
+          <div class="light"></div>
+        </li>
+        <li class="medium">
+          <router-link to="#"><b>Transport & Traffic</b></router-link>
+          <div class="light"></div>
+          <div class="light"></div>
+        </li>
+        <li class="medium">
+          <router-link to="#"><b>Finance Data</b></router-link>
+          <div class="light"></div>
+          <div class="light"></div>
+        </li>
+        <li class="large">
+          <router-link to="#"><b>Health Data</b></router-link>
+          <div class="light"></div>
+          <div class="light"></div>
+        </li>
+        <li class="large">
+          <router-link to="#"><b>...</b></router-link>
+          <div class="light"></div>
+          <div class="light"></div>
+        </li>
+        <li class="large">
+          <router-link to="#"><b>...</b></router-link>
+          <div class="light"></div>
+          <div class="light"></div>
+        </li>
+        <li class="large">
+          <router-link to="#">...</router-link>
+        </li>
+        <li class="large">
+          <router-link to="#">...</router-link>
+        </li>
+        <!-- Remove the commented-out code for unused items -->
+
+        <!-- Add a manifest link for PWA support -->
+        <link rel="manifest" href="/manifest.json">
+      </ul>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
 @media (max-width: 600px) {
-  /* Set the width to 100% for mobile screens */
   .housing {
     width: 100%;
     right: 0;
+    position: static;
+    border: none;
+    margin: 0;
+    height: auto;
+    box-shadow: none;
   }
 }
 .housing {
@@ -209,255 +207,5 @@
     background-color: #ffa726;
   }
 }
-.rack li:nth-of-type(1) .light:nth-of-type(2) {
-  -webkit-animation-delay: 937ms;
-  -moz-animation-delay: 937ms;
-  animation-delay: 937ms;
-}
 
-.rack li:nth-of-type(2) .light:nth-of-type(2) {
-  -webkit-animation-delay: 920ms;
-  -moz-animation-delay: 920ms;
-  animation-delay: 920ms;
-}
-
-.rack li:nth-of-type(3) .light:nth-of-type(2) {
-  -webkit-animation-delay: 797ms;
-  -moz-animation-delay: 797ms;
-  animation-delay: 797ms;
-}
-
-.rack li:nth-of-type(4) .light:nth-of-type(2) {
-  -webkit-animation-delay: 838ms;
-  -moz-animation-delay: 838ms;
-  animation-delay: 838ms;
-}
-
-.rack li:nth-of-type(5) .light:nth-of-type(2) {
-  -webkit-animation-delay: 278ms;
-  -moz-animation-delay: 278ms;
-  animation-delay: 278ms;
-}
-
-.rack li:nth-of-type(6) .light:nth-of-type(2) {
-  -webkit-animation-delay: 11ms;
-  -moz-animation-delay: 11ms;
-  animation-delay: 11ms;
-}
-
-.rack li:nth-of-type(7) .light:nth-of-type(2) {
-  -webkit-animation-delay: 512ms;
-  -moz-animation-delay: 512ms;
-  animation-delay: 512ms;
-}
-
-.rack li:nth-of-type(8) .light:nth-of-type(2) {
-  -webkit-animation-delay: 698ms;
-  -moz-animation-delay: 698ms;
-  animation-delay: 698ms;
-}
-
-.rack li:nth-of-type(9) .light:nth-of-type(2) {
-  -webkit-animation-delay: 834ms;
-  -moz-animation-delay: 834ms;
-  animation-delay: 834ms;
-}
-
-.rack li:nth-of-type(10) .light:nth-of-type(2) {
-  -webkit-animation-delay: 556ms;
-  -moz-animation-delay: 556ms;
-  animation-delay: 556ms;
-}
-
-.rack li:nth-of-type(11) .light:nth-of-type(2) {
-  -webkit-animation-delay: 11ms;
-  -moz-animation-delay: 11ms;
-  animation-delay: 11ms;
-}
-
-.rack li:nth-of-type(12) .light:nth-of-type(2) {
-  -webkit-animation-delay: 41ms;
-  -moz-animation-delay: 41ms;
-  animation-delay: 41ms;
-}
-
-.rack li:nth-of-type(13) .light:nth-of-type(2) {
-  -webkit-animation-delay: 332ms;
-  -moz-animation-delay: 332ms;
-  animation-delay: 332ms;
-}
-
-.rack li:nth-of-type(14) .light:nth-of-type(2) {
-  -webkit-animation-delay: 976ms;
-  -moz-animation-delay: 976ms;
-  animation-delay: 976ms;
-}
-
-.rack li:nth-of-type(15) .light:nth-of-type(2) {
-  -webkit-animation-delay: 390ms;
-  -moz-animation-delay: 390ms;
-  animation-delay: 390ms;
-}
-
-.rack li:nth-of-type(16) .light:nth-of-type(2) {
-  -webkit-animation-delay: 283ms;
-  -moz-animation-delay: 283ms;
-  animation-delay: 283ms;
-}
-
-.rack li:nth-of-type(17) .light:nth-of-type(2) {
-  -webkit-animation-delay: 70ms;
-  -moz-animation-delay: 70ms;
-  animation-delay: 70ms;
-}
-
-.rack li:nth-of-type(18) .light:nth-of-type(2) {
-  -webkit-animation-delay: 975ms;
-  -moz-animation-delay: 975ms;
-  animation-delay: 975ms;
-}
-
-.rack li:nth-of-type(19) .light:nth-of-type(2) {
-  -webkit-animation-delay: 218ms;
-  -moz-animation-delay: 218ms;
-  animation-delay: 218ms;
-}
-
-.rack li:nth-of-type(20) .light:nth-of-type(2) {
-  -webkit-animation-delay: 776ms;
-  -moz-animation-delay: 776ms;
-  animation-delay: 776ms;
-}
-
-.rack li:nth-of-type(21) .light:nth-of-type(2) {
-  -webkit-animation-delay: 626ms;
-  -moz-animation-delay: 626ms;
-  animation-delay: 626ms;
-}
-
-.rack li:nth-of-type(22) .light:nth-of-type(2) {
-  -webkit-animation-delay: 425ms;
-  -moz-animation-delay: 425ms;
-  animation-delay: 425ms;
-}
-
-.rack li:nth-of-type(23) .light:nth-of-type(2) {
-  -webkit-animation-delay: 730ms;
-  -moz-animation-delay: 730ms;
-  animation-delay: 730ms;
-}
-
-.rack li:nth-of-type(24) .light:nth-of-type(2) {
-  -webkit-animation-delay: 662ms;
-  -moz-animation-delay: 662ms;
-  animation-delay: 662ms;
-}
-
-.rack li:nth-of-type(25) .light:nth-of-type(2) {
-  -webkit-animation-delay: 707ms;
-  -moz-animation-delay: 707ms;
-  animation-delay: 707ms;
-}
-
-.rack li:nth-of-type(26) .light:nth-of-type(2) {
-  -webkit-animation-delay: 122ms;
-  -moz-animation-delay: 122ms;
-  animation-delay: 122ms;
-}
-
-.rack li:nth-of-type(27) .light:nth-of-type(2) {
-  -webkit-animation-delay: 888ms;
-  -moz-animation-delay: 888ms;
-  animation-delay: 888ms;
-}
-
-.rack li:nth-of-type(28) .light:nth-of-type(2) {
-  -webkit-animation-delay: 884ms;
-  -moz-animation-delay: 884ms;
-  animation-delay: 884ms;
-}
-
-.rack li:nth-of-type(29) .light:nth-of-type(2) {
-  -webkit-animation-delay: 630ms;
-  -moz-animation-delay: 630ms;
-  animation-delay: 630ms;
-}
-
-.rack li:nth-of-type(30) .light:nth-of-type(2) {
-  -webkit-animation-delay: 984ms;
-  -moz-animation-delay: 984ms;
-  animation-delay: 984ms;
-}
-
-.rack li:nth-of-type(31) .light:nth-of-type(2) {
-  -webkit-animation-delay: 126ms;
-  -moz-animation-delay: 126ms;
-  animation-delay: 126ms;
-}
-
-.rack li:nth-of-type(32) .light:nth-of-type(2) {
-  -webkit-animation-delay: 184ms;
-  -moz-animation-delay: 184ms;
-  animation-delay: 184ms;
-}
-
-.rack li:nth-of-type(33) .light:nth-of-type(2) {
-  -webkit-animation-delay: 513ms;
-  -moz-animation-delay: 513ms;
-  animation-delay: 513ms;
-}
-
-.rack li:nth-of-type(34) .light:nth-of-type(2) {
-  -webkit-animation-delay: 788ms;
-  -moz-animation-delay: 788ms;
-  animation-delay: 788ms;
-}
-
-.rack li:nth-of-type(35) .light:nth-of-type(2) {
-  -webkit-animation-delay: 740ms;
-  -moz-animation-delay: 740ms;
-  animation-delay: 740ms;
-}
-
-.rack li:nth-of-type(36) .light:nth-of-type(2) {
-  -webkit-animation-delay: 196ms;
-  -moz-animation-delay: 196ms;
-  animation-delay: 196ms;
-}
-
-.rack li:nth-of-type(37) .light:nth-of-type(2) {
-  -webkit-animation-delay: 243ms;
-  -moz-animation-delay: 243ms;
-  animation-delay: 243ms;
-}
-
-.rack li:nth-of-type(38) .light:nth-of-type(2) {
-  -webkit-animation-delay: 447ms;
-  -moz-animation-delay: 447ms;
-  animation-delay: 447ms;
-}
-
-.rack li:nth-of-type(39) .light:nth-of-type(2) {
-  -webkit-animation-delay: 599ms;
-  -moz-animation-delay: 599ms;
-  animation-delay: 599ms;
-}
-
-.rack li:nth-of-type(40) .light:nth-of-type(2) {
-  -webkit-animation-delay: 766ms;
-  -moz-animation-delay: 766ms;
-  animation-delay: 766ms;
-}
-
-.rack li:nth-of-type(41) .light:nth-of-type(2) {
-  -webkit-animation-delay: 931ms;
-  -moz-animation-delay: 931ms;
-  animation-delay: 931ms;
-}
-
-.rack li:nth-of-type(42) .light:nth-of-type(2) {
-  -webkit-animation-delay: 923ms;
-  -moz-animation-delay: 923ms;
-  animation-delay: 923ms;
-}
 </style>

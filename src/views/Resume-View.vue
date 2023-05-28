@@ -4,7 +4,7 @@
     <div class="flex flex-col md:flex-row md:space-x-4 md:items-center">
       <div class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
         <div class="flex justify-center items-center">
-          <img class="w-20 h-20 rounded" src="../assets/bitme/mario.png" alt="Default avatar" />
+          <img class="w-20 h-20 rounded" src="../assets/bitme/mario.webp" alt="Default avatar" />
           <a href="https://github.com/Nindenkawe" class="w-30 p-4">
             <img style="position: relative; color: gold;" src="https://ghchart.rshah.org/Nindenkawe" alt="Nindankawe's git contribution" />
           </a>
@@ -37,7 +37,7 @@
           <button type="button" class="card-link md:mr-6 p-2">
             <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
               <div class="flex items-center">
-                <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/ideas.png" alt="Certificate image" />
+                <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/ideas.webp" alt="Certificate image" />
                 <div class="text-left">
                   <div class="text-base font-semibold">Google Data Analytics Professional Certificate</div>
                   <div class="text-sm">Issued by: Grow with Google</div>

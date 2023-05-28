@@ -232,7 +232,6 @@
 </script>
 
 <style scoped>
-  /* Styles required only for the example above */
   .scrollspy-example {
     position: relative;
     height: 800px;

@@ -1,123 +1,112 @@
 <template>
-<div class="footer">
-  <ul> 
-    <li>
-      <a href="https://www.linkedin.com/in/nindenkawe-amir-5713bb7a/">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="fa fa-linkedin"></span>
-      </a> 
-    </li>
-    <li>
-      <a href="https://twitter.com/amiritius">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="fa fa-twitter"></span>
-      </a> 
-    </li>
-    <li>
-      <a href="https://github.com/Nindenkawe">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="fa fa-github"></span>
-      </a> 
-    </li>
-  </ul>  
-</div>   
+  <div class="footer">
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/nindenkawe-amir-5713bb7a/">
+          <span class="fa fa-linkedin"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/amiritius">
+          <span class="fa fa-twitter"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Nindenkawe">
+          <span class="fa fa-github"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style scoped>
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
- ul {
-   position: absolute;
-   display: flex;
-   transform: rotate(-25deg) skew(25deg);
-   transform-style: preserve-3d;
-}
-ul li {
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.footer {
   position: relative;
-  list-style: none;
-  width: 60px;
-  height: 60px;
-  margin: 0px 20px;
-}
-ul li:before{
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: -5px;
-  width: 100%;
-  height: 10px;
-  background: #2a2a2a;
-  transform-origin: top;
-  transform: skewX(-41deg);
-}
-ul li:after{
-  content: '';
-  position: absolute;
-  top:5px;
-  left: -9px;
-  width: 9px;
-  height: 100%;
-  background: #2a2a2a;
-  transform-origin: right;
-  transform: skewY(-49deg);
-}
-ul li span{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex !important;
-  background: #2a2a2a;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  margin: 0 10px;
+}
+
+ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+ul li a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+ul li a.active {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+ul li a span {
   color: #fff;
-  font-size: 30px !important;
-  transition: 1.5s ease-out;
+  font-size: 24px;
 }
-ul li:hover span {
-  z-index: 1000;
-  transition: .3s;
-  color: #fff;
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+
+ul li:nth-child(1) a {
+  background-color: #0A66C2;
 }
-ul li:hover span:nth-child(5){
-  transform: translate(40px, -40px);
-  opacity: 1;
+
+ul li:nth-child(2) a {
+  background-color: #1da1f2;
 }
-ul li:hover span:nth-child(4){
-  transform: translate(30px, -30px);
-  opacity: .8;
+
+ul li:nth-child(3) a {
+  background-color: #171515;
 }
-ul li:hover span:nth-child(3){
-  transform: translate(20px, -20px);
-  opacity: .6;
-}
-ul li:hover span:nth-child(2){
-  transform: translate(10px, -10px);
-  opacity: .4;
-}ul li:hover span:nth-child(1){
-  transform: translate(0px, 0px);
-  opacity: .2;
-}
-ul li:nth-child(1):hover span{
-  background: #0A66C2 !important;
-}
-ul li:nth-child(2):hover span{
-  background: #1da1f2 !important;
-}
-ul li:nth-child(3):hover span{
-  background: #171515 !important;
-}
-ul li:nth-child(4):hover span{
-  background: #353204 !important;
+
+ul li:nth-child(4) a {
+  background-color: #353204;
 }
 </style>
+
+<script>
+  // JavaScript code to add/remove active class on click
+  const icons = document.querySelectorAll('.footer a');
+
+  icons.forEach((icon) => {
+    icon.addEventListener('click', function () {
+      if (this.classList.contains('active')) {
+        this.classList.remove('active');
+      } else {
+        icons.forEach((otherIcon) => {
+          otherIcon.classList.remove('active');
+        });
+        this.classList.add('active');
+      }
+    });
+  });
+</script>
