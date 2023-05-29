@@ -12,27 +12,19 @@ const routes = [
     name: 'Resume-View',
     component: () => import('../views/Resume-View.vue')
   },
-  {
+/*   {
     path: '/Data_visualization',
     name: 'Data_visualization',
-    component: () => import('../views/Data_visualization.vue')
-  },
-  {
+    component: () => import('')
+  }, */
+/*   {
     path: '/My_version_of_RSE.rw',
     name: 'My_version_of_RSE.rw',
-    component: () => import('../views/RSE_rw.vue')
-  }
+    component: () => import('')
+  } */
 ]
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes,
-  scrollBehavior(to) {
-    if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-      }
-    }
-  }
+  routes
 })
 export default router

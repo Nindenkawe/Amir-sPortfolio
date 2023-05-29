@@ -1,30 +1,30 @@
 <template>
-<div class="grid grid-cols-3 ">
+<div class="grid grid-cols-3 p-5 ">
   <div class="col-span-2">
     <div data-bs-spy="scroll" data-bs-target="#scrollspy1" data-bs-offset="200" class="scrollspy-example">
       <section id="Generalstats">
         <h3 class="text-xl dark:text-white font-semibold pt-5 pb-3">🇷🇼 General Statistics</h3>
-          <div class="flex p-2 dark:bg-gray-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-black-400 border-gray-200 rounded-lg">
+          <div class="flex p-2 dark:bg-white-800 dark:border-gray-700 w-auto text-sm text-left text-gray-500 dark:text-black-400 border-gray-200 rounded-sm">
             <button type="button"
-                    class="appearance-none py-4 mr-6"
+                    class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800"
                     :class="{'text-blue-dark border-b border-blue-dark': activeTab === 'gdp'}"
                     @click="activeTab = 'gdp'">
               <span :class="{'font-bold': activeTab === 'gdp'}">Gross Domestic Product</span> &middot; {{ GDP }}
             </button>
             <button type="button"
-                    class="appearance-none py-4 mr-6"
+                    class="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900"
                     :class="{'text-blue-dark border-b border-blue-dark': activeTab === 'cpi'}"
                     @click="activeTab = 'cpi'">
               <span :class="{'font-bold': activeTab === 'cpi'}">Consumer Price Index</span> &middot; 159.8
             </button>
             <button type="button"
-                    class="appearance-none py-4"
+                    class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800"
                     :class="{'text-blue-dark border-b border-blue-dark': activeTab === 'life'}"
                     @click="activeTab = 'life'">
               <span :class="{'font-bold': activeTab === 'life'}">Life Expectancy at Birth</span> &middot; 68.6
             </button>
                 <button type="button"
-                    class="appearance-none py-4"
+                    class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900"
                     :class="{'text-blue-dark border-b border-blue-dark': activeTab === 'srp'}"
                     @click="activeTab = 'srp'">
               <span :class="{'font-bold': activeTab === 'srp'}">Size of the Resident Population</span> &middot; 13,246,394
@@ -150,7 +150,7 @@
           </p>
         </section>
       </section>
-      <section id="Mobility">
+      <section id="Mobility" class="bg-transparent py-10">
         <h3 class="text-xl font-semibold pt-5 pb-3 dark:text-white">Transport & Mobility</h3>
         <p class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-black-400 rounded-lg shadow-md">
           The bar chart below presents data on the number of cars and vehicle inspections between 2017-2021, sourced from RRA and RNP. 
@@ -169,35 +169,31 @@
       </section>
     </div>
   </div>
-
-  <div>
-    <div id="scrollspy1" class="sticky-top pl-3 dark:text-white text-sm">
-      <ul class="nav nav-pills menu-sidebar">
-        <li class="py-1">
-          <a class="nav-link" href="#Generalstats">General Statistics</a>
+  <div id="scrollspy1" class="sticky-header pl-3 dark:text-white text-sm">
+  <ul class="nav nav-pills menu-sidebar">
+    <li class="nav-item py-1">
+      <a class="nav-link" href="#Generalstats">General Statistics</a>
+    </li>
+    <li class="nav-item py-1">
+      <a class="nav-link" href="#price index by Region">Consumer price index by Region</a>
+    </li>
+    <li class="nav-item py-1">
+      <a class="nav-link" href="#Telecommunications">Telecommunications</a>
+      <ul class="nav flex-column pl-3">
+        <li class="nav-item py-1">
+          <a class="nav-link" href="#Top Players">Top Players</a>
         </li>
-        <li class="py-1">
-          <a class="nav-link" href="#price index by Region">Consumer price index by Region</a>
-        </li>
-        <li class="py-1">
-          <a class="nav-link" href="#Telecommunications">Telecommunications</a>
-          <ul class="nav flex-column pl-3">
-            <li class="py-1">
-              <a class="nav-link" href="#Top Players">Top Players</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#Internet">Internet</a>
-            </li>
-          </ul>
-        </li>
-        <li class="py-1">
-          <a class="nav-link" href="#Mobility">Transport & Mobility</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#Internet">Internet</a>
         </li>
       </ul>
-    </div>
-  </div>
+    </li>
+    <li class="nav-item py-1">
+      <a class="nav-link" href="#Mobility">Transport & Mobility</a>
+    </li>
+  </ul>
 </div>
-
+</div>
 </template>
 
 <script>
@@ -220,14 +216,6 @@
         GDP: ''
       }
     },
-    /* mounted() {
-    axios.get('https://www.statistics.gov.rw/')
-      .then(({ data }) => {
-        const GDP = $(data).find('div.col-md-4 > div.figure-value > h1').text();
-        this.GDP = GDP;
-      })
-      .catch(error => console.log(`Error fetching data: ${error}`));
-  } */
 }
 </script>
 
@@ -237,4 +225,8 @@
     height: 800px;
     overflow: auto;
   }
+  .nav-pills .nav-link:hover {
+  background-color: #eee;
+  color: #000;
+}
 </style>
