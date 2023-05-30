@@ -1,17 +1,17 @@
 <template>
     <div id="chart" class="flex-shrink-0 text-2xl mx-auto p-4 bg-white dark:bg-gray-200 border-gray-200 dark:border-gray-200 text-gray-500 dark:text-black-400 rounded-lg shadow-md">
-        <apexchart type="line" height="350" :options="chartOptions" :series="series"></apexchart>
+        
       </div>
 </template>
 <script>
-  import VueApexCharts from 'vue3-apexcharts'
+  
   export default {
     components: {
-      apexchart: VueApexCharts,
+     
       },
     data: function() {
       return {
-        series: [{
+        /* series: [{
             name: 'Internet subscriptions',
             type: 'column',
             data: [8.349, 7.873, 7.943, 8.267, 8.327]
@@ -50,7 +50,7 @@
                 text: ''
               }
             }]
-          },
+          }, */
     }
     },
   };

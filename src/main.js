@@ -1,8 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-/* import VueBrowserDetect from 'vue-browser-detect-plugin' */
-import VueApexCharts from 'vue3-apexcharts'
 import './index.css'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -25,4 +23,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-createApp(App).use(router, analytics, VueApexCharts).mount('#app').component('apex-chart', VueApexCharts)
+createApp(App).use(router, analytics).mount('#app')

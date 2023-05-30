@@ -30,7 +30,7 @@
           <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">International</h3>
               <p class="my-4">
-                <apexchart type="pie" width="380" :options="chartOptions" :series="International"></apexchart>
+                
               </p>
           </blockquote>
       </figure>
@@ -38,14 +38,14 @@
 </template>
 
 <script>
-  import VueApexCharts from 'vue3-apexcharts'
+ 
   export default {
     components: {
-      apexchart: VueApexCharts,
+      
       },
     data: function() {
       return {
-        Market_share: [64.4, 35.6],
+        /* Market_share: [64.4, 35.6],
         On_net: [77,23],
         Off_net: [39, 61],
         International: [76, 24],
@@ -67,7 +67,7 @@
                 }
               }
             }]
-        },
+        }, */
       }
     },
   };

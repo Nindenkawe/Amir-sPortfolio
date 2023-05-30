@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <ul>
+    <ul class="ul li a.active">
       <li>
         <a href="https://www.linkedin.com/in/nindenkawe-amir-5713bb7a/">
           <span class="fa fa-linkedin"></span>
