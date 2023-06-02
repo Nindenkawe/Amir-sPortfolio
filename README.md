@@ -1,4 +1,10 @@
 # nindenkawe
+This is my portfolio webpage done with 
+-Vue3
+-Tailwindcss
+-chartsjs
+-GchartsAPI
+-Firebase
 
 ## Project setup
 ```

@@ -2,8 +2,8 @@
   <Logo />
   <section class="flex justify-center items-center h-screen">
   <div class="flex flex-col items-center">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
-      <div class="flex flex-col justify-center lg:pr-0 p-2">
+    <div class="py-2 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+      <div class="flex flex-col justify-center lg:pr-0">
         <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
         {{ greeting }}</span>
         {{ greetingc }}</h1>
@@ -44,17 +44,3 @@
     }
     }
 </script>
-
-<style>
-body {
-  height: 300px;
-  display: block;
-  background-color: rgb(10, 2, 31);
-  font-family: 'Space Mono', monospace;
-}
-@media screen and (max-width: 768px) {
-  #app {
-    display: none;
-  }
-}
-</style>

@@ -9,3 +9,17 @@
     </nav>
     <router-view/>
 </template>
+
+<style>
+body {
+  height: 300px;
+  display: block;
+  background-color: rgb(10, 2, 31);
+  font-family: 'Space Mono', monospace;
+}
+@media screen and (max-width: 768px) {
+  #app {
+    display: none;
+  }
+}
+</style>
