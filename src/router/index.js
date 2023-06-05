@@ -8,18 +8,18 @@ const routes = [
     component: Home
   },
   {
-    path: '/Resume',
-    name: 'Resume-View',
-    component: () => import('../views/Resume-View.vue')
+    path: '/Projects',
+    name: 'Projects-View',
+    component: () => import('../views/Projects-View.vue')
+  },
+  {
+    path: '/finance_viz',
+    name: 'finance_viz',
+    component: () => import('../components/Dashboards/finance-data.vue')
   },
 /*   {
-    path: '/Data_visualization',
-    name: 'Data_visualization',
-    component: () => import('')
-  }, */
-/*   {
-    path: '/My_version_of_RSE.rw',
-    name: 'My_version_of_RSE.rw',
+    path: '/health_viz',
+    name: 'health_viz',
     component: () => import('')
   } */
 ]

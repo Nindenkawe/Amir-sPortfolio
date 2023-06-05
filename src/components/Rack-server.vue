@@ -5,12 +5,12 @@
       <div class="foot"></div>
       <ul class="rack">
         <li class="medium">
-          <router-link to="#"><b>EA Trade & Commerce</b></router-link>
+          <router-link to="#"><b>General statistics</b></router-link>
           <div class="light"></div>
           <div class="light"></div>
         </li>
         <li class="medium">
-          <router-link to="#"><b>Insurance Data</b></router-link>
+          <router-link to="#"><b>Insurance</b></router-link>
           <div class="light"></div>
           <div class="light"></div>
         </li>
@@ -20,12 +20,12 @@
           <div class="light"></div>
         </li>
         <li class="medium">
-          <router-link to="#"><b>Finance Data</b></router-link>
+          <router-link to=""><b>Finance</b></router-link>
           <div class="light"></div>
           <div class="light"></div>
         </li>
         <li class="large">
-          <router-link to="#"><b>Health Data</b></router-link>
+          <router-link to="#"><b>Health</b></router-link>
           <div class="light"></div>
           <div class="light"></div>
         </li>
@@ -45,9 +45,6 @@
         <li class="large">
           <router-link to="#">...</router-link>
         </li>
-        <!-- Remove the commented-out code for unused items -->
-
-        <!-- Add a manifest link for PWA support -->
         <link rel="manifest" href="/manifest.json">
       </ul>
     </div>
