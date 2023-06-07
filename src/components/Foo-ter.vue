@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <ul class="ul li a.active">
       <li>
         <a href="https://www.linkedin.com/in/nindenkawe-amir-5713bb7a/">
@@ -17,7 +17,7 @@
         </a>
       </li>
     </ul>
-  </div>
+  </footer>
 </template>
 
 <style scoped>
@@ -28,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 ul {
@@ -72,12 +72,12 @@ ul li a.active {
 }
 
 ul li a span {
-  color: #fff;
-  font-size: 24px;
+  color: #3d2c66;
+  font-size: 40px;
 }
 
 ul li:nth-child(1) a {
-  background-color: #0A66C2;
+  background-color: #0777e7;
 }
 
 ul li:nth-child(2) a {

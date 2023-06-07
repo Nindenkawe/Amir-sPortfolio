@@ -1,7 +1,6 @@
 <template>
   <Logo />
-  <section class="flex justify-center items-center h-screen">
-  <div class="flex flex-col items-center">
+  <main class="flex justify-center items-center h-screen">
     <div class="py-2 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
       <div class="flex flex-col justify-center lg:pr-0">
         <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
@@ -21,54 +20,51 @@
       </div>
       <img class="w-30 h-30 rounded" src="../assets/bitme/help.webp" alt="Default avatar" />
     </div>
-  </div>
-</section>
+</main>
 <section>
-    <div class="container mx-auto">
-    <div class="flex flex-col md:flex-row md:space-x-4 md:items-center">
-      <div class="flex-shrink-0 text-2xl mx-auto p-2 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-        <div class="flex justify-center items-center">
-          <img class="w-20 h-20 rounded" src="../assets/bitme/mario.webp" alt="Default avatar" />
-          <a href="https://github.com/Nindenkawe" class="w-30">
-            <img style="position: relative; color: rgb(57, 39, 214);" src="https://ghchart.rshah.org/Nindenkawe" alt="Nindankawe's git contribution" />
+  <div class="flex flex-col md:flex-row md:space-x-2 md:items-center">
+    <div class="flex-shrink-0 text-2xl mx-auto p-2 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
+      <div class="flex justify-center items-center">
+        <img class="w-20 rounded" src="../assets/bitme/mario.webp" alt="Default avatar" />
+        <a href="https://github.com/Nindenkawe" class="w-30">
+          <img style=" color: #3d2c66" src="https://ghchart.rshah.org/Nindenkawe" alt="Nindankawe's git contribution" />
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center md:items-start mt-6 md:mt-0">
+        <button type="button" class="card-link md:mr-6 p-2">
+          <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
+            <div class="flex items-center">
+              <div class="text-left">
+                <div class="text-base font-semibold">10x1000 Fintech Expert Program</div>
+                <div class="text-sm">Issued by: 10x1000 Tech for Inclusion</div>
+                <div class="text-sm">Issued on: April 2023</div>
+              </div>
+            </div>
           </a>
-        </div>
-        <div class="flex flex-col justify-center items-center md:items-start mt-6 md:mt-0">
-          <button type="button" class="card-link md:mr-6 p-2">
-            <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
-              <div class="flex items-center">
-                <div class="text-left">
-                  <div class="text-base font-semibold">10x1000 Fintech Expert Program</div>
-                  <div class="text-sm">Issued by: 10x1000 Tech for Inclusion</div>
-                  <div class="text-sm">Issued on: April 2023</div>
-                </div>
+        </button>
+        <button type="button" class="card-link md:mr-6 p-2">
+          <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
+            <div class="flex items-center">
+              <div class="text-left">
+                <div class="text-base font-semibold">10x1000 Fintech Foundation Program</div>
+                <div class="text-sm">Issued by: 10x1000 Tech for Inclusion</div>
+                <div class="text-sm">Issued on: November 2022</div>
               </div>
-            </a>
-          </button>
-          <button type="button" class="card-link md:mr-6 p-2">
-            <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
-              <div class="flex items-center">
-                <div class="text-left">
-                  <div class="text-base font-semibold">10x1000 Fintech Foundation Program</div>
-                  <div class="text-sm">Issued by: 10x1000 Tech for Inclusion</div>
-                  <div class="text-sm">Issued on: November 2022</div>
-                </div>
+            </div>
+          </a>
+        </button>
+        <button type="button" class="card-link md:mr-6 p-2">
+          <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
+            <div class="flex items-center">
+              <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/ideas.webp" alt="Certificate image" />
+              <div class="text-left">
+                <div class="text-base font-semibold">Google Data Analytics Professional Certificate</div>
+                <div class="text-sm">Issued by: Grow with Google</div>
+                <div class="text-sm">Issued on: Still learning</div>
               </div>
-            </a>
-          </button>
-          <button type="button" class="card-link md:mr-6 p-2">
-            <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
-              <div class="flex items-center">
-                <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/ideas.webp" alt="Certificate image" />
-                <div class="text-left">
-                  <div class="text-base font-semibold">Google Data Analytics Professional Certificate</div>
-                  <div class="text-sm">Issued by: Grow with Google</div>
-                  <div class="text-sm">Issued on: Still learning</div>
-                </div>
-              </div>
-            </a>
-          </button>
-        </div>
+            </div>
+          </a>
+        </button>
       </div>
     </div>
   </div>

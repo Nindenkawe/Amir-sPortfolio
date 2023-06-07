@@ -17,9 +17,4 @@ body {
   background-color: rgb(10, 2, 31);
   font-family: 'Space Mono', monospace;
 }
-@media screen and (max-width: 768px) {
-  #app {
-    display: none;
-  }
-}
 </style>

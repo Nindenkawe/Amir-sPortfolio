@@ -52,15 +52,9 @@
 </template>
 
 <style scoped>
-@media (max-width: 600px) {
-  .housing {
-    width: 100%;
-    right: 0;
-    position: static;
-    border: none;
-    margin: 0;
-    height: auto;
-    box-shadow: none;
+@media screen and (max-width: 768px) {
+  #app {
+    display: none;
   }
 }
 .housing {
@@ -74,17 +68,6 @@
   border: 8px solid #151515;
   background-color: #151515;
   box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 600px) {
-  .housing {
-    position: static;
-    width: 100%;
-    border: none;
-    margin: 0;
-    height: auto;
-    box-shadow: none;
-  }
 }
 
 .foot {
