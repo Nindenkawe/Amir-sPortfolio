@@ -1,8 +1,6 @@
 <template>
   <div class="w-60 h-auto shadow-md bg-white px-1 absolute">
     <div class="housing">
-      <div class="foot"></div>
-      <div class="foot"></div>
       <ul class="rack">
         <li class="medium">
           <router-link to="#"><b>General statistics</b></router-link>
@@ -47,6 +45,8 @@
         </li>
         <link rel="manifest" href="/manifest.json">
       </ul>
+      <div class="foot"></div>
+      <div class="foot"></div>
     </div>
   </div>
 </template>

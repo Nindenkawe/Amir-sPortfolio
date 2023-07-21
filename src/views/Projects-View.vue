@@ -10,7 +10,7 @@
   import viz from '@/components/Data_visualization.vue'
 
   export default {
-    name: 'ResumeView',
+    name: 'Projects-View',
     components: {
       Logo,viz,rackserver
     },

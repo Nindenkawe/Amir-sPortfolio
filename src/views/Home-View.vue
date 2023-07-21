@@ -3,13 +3,13 @@
   <main class="flex justify-center items-center h-screen">
     <div class="py-2 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
       <div class="flex flex-col justify-center lg:pr-0">
-        <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+        <h1 class="mb-4 text-3xl font-extrabold text-white text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
         {{ greeting }}</span>
         {{ greetingc }}</h1>
-        <p class="mb-3 text-gray-500 dark:text-gray-400 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left">
+        <p class="mb-3 text-white text-gray-400 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-white first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left">
         {{msgc}}
         </p>
-        <p class="text-gray-500 dark:text-gray-400"> {{ msg }}</p>
+        <p class="text-white dark:text-white"> {{ msg }}</p>
         <div class="mb-2">
           <a href="https://www.linkedin.com/in/nindenkawe-amir-5713bb7a/" class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg bg-blue-500">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
@@ -22,11 +22,13 @@
     </div>
 </main>
 <section>
-  <div class="flex flex-col md:flex-row md:space-x-2 md:items-center">
-    <div class="flex-shrink-0 text-2xl mx-auto p-2 border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-md">
-      <div class="flex justify-center items-center">
-        <img class="w-20 rounded" src="../assets/bitme/mario.webp" alt="Default avatar" />
-        <a href="https://github.com/Nindenkawe" class="w-30">
+  <div class="py-2 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+    <div class="flex-shrink-0 text-2xl mx-auto p-2 border-gray-200 dark:border-gray-700 text-white dark:text-gray-400 rounded-lg shadow-md">
+      <div class=" mb-4 text-2xl font-extrabold md:text-2xl lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+        Certificates & Git contibutions
+      </div>
+      <div class="p-2 flex justify-center items-center">
+        <a href="https://github.com/Nindenkawe">
           <img style=" color: #3d2c66" src="https://ghchart.rshah.org/Nindenkawe" alt="Nindankawe's git contribution" />
         </a>
       </div>
@@ -34,10 +36,11 @@
         <button type="button" class="card-link md:mr-6 p-2">
           <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
             <div class="flex items-center">
+              <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/Finteck_Expert.png" alt="Certificate image" />
               <div class="text-left">
                 <div class="text-base font-semibold">10x1000 Fintech Expert Program</div>
                 <div class="text-sm">Issued by: 10x1000 Tech for Inclusion</div>
-                <div class="text-sm">Issued on: April 2023</div>
+                
               </div>
             </div>
           </a>
@@ -45,10 +48,11 @@
         <button type="button" class="card-link md:mr-6 p-2">
           <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
             <div class="flex items-center">
+              <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/Foundation_flex.png" alt="Certificate image" />
               <div class="text-left">
                 <div class="text-base font-semibold">10x1000 Fintech Foundation Program</div>
                 <div class="text-sm">Issued by: 10x1000 Tech for Inclusion</div>
-                <div class="text-sm">Issued on: November 2022</div>
+                
               </div>
             </div>
           </a>
@@ -56,15 +60,16 @@
         <button type="button" class="card-link md:mr-6 p-2">
           <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
             <div class="flex items-center">
-              <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/ideas.webp" alt="Certificate image" />
+              <!-- <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/ideas.webp" alt="Certificate image" /> -->
               <div class="text-left">
                 <div class="text-base font-semibold">Google Data Analytics Professional Certificate</div>
                 <div class="text-sm">Issued by: Grow with Google</div>
-                <div class="text-sm">Issued on: Still learning</div>
+                <div class="text-sm">Still learning</div>
               </div>
             </div>
           </a>
         </button>
+        
       </div>
     </div>
   </div>
