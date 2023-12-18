@@ -12,8 +12,7 @@
   body {
     height: 300px;
     display: block;
-    background-color: rgb(10, 2, 31);
-    font-family: 'Space Mono', monospace;
+    background-color: #19191f
     /* Set the background image */
 /*     background-image: url("./assets/bitme/bg.jpg");
     background-repeat: no-repeat;

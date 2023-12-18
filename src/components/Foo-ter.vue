@@ -72,20 +72,20 @@ ul li a.active {
 }
 
 ul li a span {
-  color: #3d2c66;
+  color: #2a2a2a;
   font-size: 40px;
 }
 
 ul li:nth-child(1) a {
-  background-color: #0777e7;
+  background-color: #edf0f1;
 }
 
 ul li:nth-child(2) a {
-  background-color: #1da1f2;
+  background-color: #edf0f1;
 }
 
 ul li:nth-child(3) a {
-  background-color: #171515;
+  background-color: #edf0f1;
 }
 
 ul li:nth-child(4) a {

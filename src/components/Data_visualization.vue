@@ -1,5 +1,5 @@
 <template>
-<div class="grid grid-cols-3 p-2 ">
+ <div class="grid grid-cols-3 p-2">
   <div class="col-span-2">
     <div data-bs-spy="scroll" data-bs-target="#scrollspy1" data-bs-offset="200" class="scrollspy-example">
       <div class="p-2" id="Generalstats">
@@ -144,8 +144,8 @@
       </div>
     </div>
   </div>
-  <div id="scrollspy1" class="sticky-header pl-3 text-white text-sm">
-  <ul class="nav nav-pills menu-sidebar">
+    <div id="scrollspy1" class="sticky-header pl-3 text-white text-sm">
+      <ul class="nav nav-pills menu-sidebar">
     <li class="nav-item py-1">
       <a class="nav-link" href="#Generalstats">General Statistics</a>
     </li>
@@ -194,7 +194,7 @@
 </script>
 
 <style scoped>
-  .scrollspy-example {
+/*   .scrollspy-example {
     position: relative;
     height: 800px;
     overflow: auto;
@@ -202,5 +202,25 @@
   .nav-pills .nav-link:hover {
   background-color: #999faa;
   color: #000;
-}
+} */
+
+  /* Tailwind CSS classes */
+  .scrollspy-example {
+    position: relative;
+    height: 800px;
+    overflow: auto;
+  }
+
+  .nav-pills .nav-link:hover {
+    background-color: #999faa;
+    color: #000;
+  }
+
+  /* Animation Classes */
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 0.3s ease;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
 </style>
