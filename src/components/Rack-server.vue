@@ -40,10 +40,9 @@
         <li class="large">
           <router-link to="#">...</router-link>
         </li>
-        <li class="large">
+<!--         <li class="large">
           <router-link to="#">...</router-link>
-        </li>
-        <link rel="manifest" href="/manifest.json">
+        </li> -->
       </ul>
       <div class="foot"></div>
       <div class="foot"></div>
@@ -60,8 +59,8 @@
 .housing {
   margin: 20px auto;
   position: fixed;
-  width: 250px;
-  height: 515px;
+  width: 220px;
+  height: 415px;
   bottom: 0;
   right: 5%;
   border-radius: 2px;

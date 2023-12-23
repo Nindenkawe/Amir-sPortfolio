@@ -137,7 +137,7 @@
         <br>
         <p class="flex-shrink-0 text-2xl mx-auto border-gray-200 dark:border-gray-700 text-white dark:text-black-400 rounded-lg shadow-md">
           According to RNP's source data from the statistical year book of 2022, road accidents caused a death rate of 4.7 in 2021.
-          To provide a better understanding of the types of accidents that occurred, we have prepared a visual representation of the data categorised by accident type.
+          To provide a better understanding of the types of accidents that occurred, I prepared a visual representation of the data categorised by accident type.
           <BarChart/>
           <a>Source:NISR 2022</a>
         </p>
