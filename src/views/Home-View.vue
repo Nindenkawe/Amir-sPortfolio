@@ -43,7 +43,7 @@
           <button type="button" class="card-link md:mr-6 p-2">
             <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
               <div class="flex items-center">
-                <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/Finteck_Expert.png" alt="Certificate image" />
+                <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/Finteck_Expert.webp" alt="Certificate image" />
                 <div class="text-left">
                   <div class="text-base font-semibold">10x1000 Fintech Expert Program</div>
                   <div class="text-sm">Issued by: 10x1000 Tech for Inclusion</div>
@@ -55,7 +55,7 @@
           <button type="button" class="card-link md:mr-6 p-2">
             <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
               <div class="flex items-center">
-                <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/Foundation_flex.png" alt="Certificate image" />
+                <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/Foundation_flex.webp" alt="Certificate image" />
                 <div class="text-left">
                   <div class="text-base font-semibold">10x1000 Fintech Foundation Program</div>
                   <div class="text-sm">Issued by: 10x1000 Tech for Inclusion</div>
@@ -67,7 +67,7 @@
           <button type="button" class="card-link md:mr-6 p-2">
             <a href="https://drive.google.com/drive/folders/1kho5k9r8ecm0WyUbcmlPREMaXfpOMkdI?usp=share_link">
               <div class="flex items-center">
-                <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/Process_data.png" alt="Certificate image" />
+                <img class="w-20 h-20 rounded mr-4" src="../assets/bitme/Process_data.webp" alt="Certificate image" />
                 <div class="text-left">
                   <div class="text-base font-semibold">Google Data Analytics Professional Certificate</div>
                   <div class="text-sm">Issued by: Grow with Google</div>

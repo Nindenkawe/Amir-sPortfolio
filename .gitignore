@@ -1,23 +1,37 @@
-.DS_Store
-node_modules
+# npm package manager (adjust if using yarn)
+/node_modules/
+
+# Vue.js build artifacts (adjust based on your build process)
 /dist
 
+# VS Code specific files
+.vscode/settings.json  # Keep user settings
+.vscode/tasks.json  # Keep custom tasks
+!.vscode/extensions.json  # Include installed extensions (optional)
+!.vscode/launch.json  # Include debug configurations (optional)
 
-# local env files
-.env.local
-.env.*.local
+# Common log files
+*.log
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# OS specific temporary files
+*.tmp
+*.sock
+Thumbs.db
+.DS_Store
 
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Test coverage files
+/coverage/
+
+# Specific build files (adjust based on your build process)
+.env.local  # Local environment variables
+
+# Ignore all files starting with _ (common for private files)
+**/_*
+
+# Ignore all other VS Code files
+.vscode/*
+
+# Exceptions: Don't ignore these files/folders
+!package.json
+!public/  # Assuming public folder stores static assets
+!README.md
