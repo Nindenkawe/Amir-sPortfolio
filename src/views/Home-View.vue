@@ -96,7 +96,7 @@ export default {
     return {
       greeting: "Hi am Amir,",
       greetingc: "Welcome to my portfolio web page.",
-      msg: "As a developer, I possess the necessary skills and knowledge to create dynamic and responsive web pages that cater to the needs of clients. Moreover, my proficiency in data analysis allows me to derive meaningful insights from complex datasets. Finally, my passion for data visualization enables me to present the findings in a clear and concise manner, making it easier for clients to understand and act on the information.",
+      msg: "Data engineer, web developer, comfortable in languages like Python, JavaScript, with a broad understanding of Django, Django_rest framework, FastApi and Vue, plus some favorite web_dev tools like, Firebase, Googled cloud platform (Bigquery Studio, Cloud_Run)and Docker. Other skills I acquired during my time at MTN data solutions department as a data and UX support consultant include ADB, Unstructured Supplementary Service Data(USSD), Java Card, GSM and it's network spectrum, Mobile and web-apps literacy. I’m hardworking, a quick learner, highly organized and a great team player.",
       msgc: "This page serves as a platform to showcase my expertise as a web developer, data analyst, and data visualization enthusiast. "
     };
   },
